@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 3683298223,
+            "UID": 3267796940,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2000704842,
-            "ParentUID": 3683298223,
+            "UID": 4026996398,
+            "ParentUID": 3267796940,
             "Name": "EnemyBoneToss_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 474718597,
-            "ParentUID": 2000704842,
+            "UID": 2904280913,
+            "ParentUID": 4026996398,
             "Name": "EnemyBoneToss_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 3490319035,
-            "ParentUID": 474718597,
+            "UID": 2341323469,
+            "ParentUID": 2904280913,
             "Name": "EnemyBoneToss",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 1918628693,
-            "ParentUID": 3683298223,
+            "UID": 2680022928,
+            "ParentUID": 3267796940,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

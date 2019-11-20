@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 2205164435,
+            "UID": 1348295060,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -88,8 +88,8 @@
             ]
         },
         {
-            "UID": 2711607540,
-            "ParentUID": 2205164435,
+            "UID": 291092071,
+            "ParentUID": 1348295060,
             "Name": "transform1",
             "Tag": "Default",
             "Static": 0,
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "UID": 76457485,
-            "ParentUID": 2711607540,
+            "UID": 435065305,
+            "ParentUID": 291092071,
             "Name": "joint2",
             "Tag": "Default",
             "Static": 0,
@@ -246,8 +246,8 @@
             ]
         },
         {
-            "UID": 1092746159,
-            "ParentUID": 76457485,
+            "UID": 134193277,
+            "ParentUID": 435065305,
             "Name": "joint1",
             "Tag": "Default",
             "Static": 0,
@@ -325,8 +325,8 @@
             ]
         },
         {
-            "UID": 1719271841,
-            "ParentUID": 2205164435,
+            "UID": 2875787493,
+            "ParentUID": 1348295060,
             "Name": "E01_Chest",
             "Tag": "Default",
             "Static": 0,
@@ -404,8 +404,8 @@
             ]
         },
         {
-            "UID": 1016489595,
-            "ParentUID": 2205164435,
+            "UID": 1085730976,
+            "ParentUID": 1348295060,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

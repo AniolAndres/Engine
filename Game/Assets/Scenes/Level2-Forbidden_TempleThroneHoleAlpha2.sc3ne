@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1686893337,
+            "UID": 3529751937,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2090955950,
-            "ParentUID": 1686893337,
+            "UID": 2456017726,
+            "ParentUID": 3529751937,
             "Name": "ThroneHole_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 3448506805,
-            "ParentUID": 2090955950,
+            "UID": 3998057688,
+            "ParentUID": 2456017726,
             "Name": "ThroneHole_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 1319648203,
-            "ParentUID": 3448506805,
+            "UID": 1946433088,
+            "ParentUID": 3998057688,
             "Name": "ThroneHole",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 1957766306,
-            "ParentUID": 1686893337,
+            "UID": 2647270603,
+            "ParentUID": 3529751937,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

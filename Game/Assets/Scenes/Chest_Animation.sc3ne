@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1889212457,
+            "UID": 3892953210,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -88,8 +88,8 @@
             ]
         },
         {
-            "UID": 970771674,
-            "ParentUID": 1889212457,
+            "UID": 760163810,
+            "ParentUID": 3892953210,
             "Name": "transform1",
             "Tag": "Default",
             "Static": 0,
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "UID": 2401878806,
-            "ParentUID": 970771674,
+            "UID": 2955447509,
+            "ParentUID": 760163810,
             "Name": "joint2",
             "Tag": "Default",
             "Static": 0,
@@ -246,8 +246,8 @@
             ]
         },
         {
-            "UID": 76796823,
-            "ParentUID": 2401878806,
+            "UID": 3673622903,
+            "ParentUID": 2955447509,
             "Name": "joint1",
             "Tag": "Default",
             "Static": 0,

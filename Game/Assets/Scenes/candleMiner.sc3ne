@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 63621554,
+            "UID": 765605497,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 3497345150,
-            "ParentUID": 63621554,
+            "UID": 551232193,
+            "ParentUID": 765605497,
             "Name": "E01_BigCandle_Prop017_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 3579145431,
-            "ParentUID": 3497345150,
+            "UID": 1856523250,
+            "ParentUID": 551232193,
             "Name": "E01_BigCandle_Prop017_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 2161695469,
-            "ParentUID": 3579145431,
+            "UID": 4286174782,
+            "ParentUID": 1856523250,
             "Name": "E01_BigCandle_Prop017_$AssimpFbx$_Scaling",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 3501809207,
-            "ParentUID": 2161695469,
+            "UID": 2063069920,
+            "ParentUID": 4286174782,
             "Name": "E01_BigCandle_Prop017_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 3388067573,
-            "ParentUID": 3501809207,
+            "UID": 865081548,
+            "ParentUID": 2063069920,
             "Name": "E01_BigCandle_Prop017",
             "Tag": "Default",
             "Static": 0,
@@ -478,8 +478,8 @@
             ]
         },
         {
-            "UID": 2967084182,
-            "ParentUID": 63621554,
+            "UID": 1947032644,
+            "ParentUID": 765605497,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

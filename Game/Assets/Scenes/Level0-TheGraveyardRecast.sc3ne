@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 482813552,
+            "UID": 840437576,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2432794652,
-            "ParentUID": 482813552,
+            "UID": 1259274499,
+            "ParentUID": 840437576,
             "Name": "0_Floor_3_Recast_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 2747135097,
-            "ParentUID": 2432794652,
+            "UID": 2504351575,
+            "ParentUID": 1259274499,
             "Name": "0_Floor_3_Recast_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 268431161,
-            "ParentUID": 2747135097,
+            "UID": 495346785,
+            "ParentUID": 2504351575,
             "Name": "0_Floor_3_Recast_$AssimpFbx$_Scaling",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 2005414771,
-            "ParentUID": 268431161,
+            "UID": 2213763167,
+            "ParentUID": 495346785,
             "Name": "0_Floor_3_Recast_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 3030064098,
-            "ParentUID": 2005414771,
+            "UID": 995466950,
+            "ParentUID": 2213763167,
             "Name": "0_Floor_3_Recast",
             "Tag": "Default",
             "Static": 0,
@@ -478,8 +478,8 @@
             ]
         },
         {
-            "UID": 1487880635,
-            "ParentUID": 482813552,
+            "UID": 1824092259,
+            "ParentUID": 840437576,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -614,8 +614,8 @@
             ]
         },
         {
-            "UID": 1390602110,
-            "ParentUID": 482813552,
+            "UID": 3373140499,
+            "ParentUID": 840437576,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -750,8 +750,8 @@
             ]
         },
         {
-            "UID": 3602138441,
-            "ParentUID": 482813552,
+            "UID": 305177761,
+            "ParentUID": 840437576,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -886,8 +886,8 @@
             ]
         },
         {
-            "UID": 1312976424,
-            "ParentUID": 482813552,
+            "UID": 3939052121,
+            "ParentUID": 840437576,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

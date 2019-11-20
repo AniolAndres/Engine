@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 2753545522,
+            "UID": 529696969,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2862670213,
-            "ParentUID": 2753545522,
+            "UID": 4214572288,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Wall_Zone3_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 4000860936,
-            "ParentUID": 2862670213,
+            "UID": 2390775239,
+            "ParentUID": 4214572288,
             "Name": "Lvl2_Wall_Zone3_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 799552524,
-            "ParentUID": 4000860936,
+            "UID": 1264637905,
+            "ParentUID": 2390775239,
             "Name": "Lvl2_Wall_Zone3",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 2566676148,
-            "ParentUID": 2753545522,
+            "UID": 291959116,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -456,8 +456,8 @@
             ]
         },
         {
-            "UID": 1701842916,
-            "ParentUID": 2753545522,
+            "UID": 1807057715,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Wall_Zone1_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -535,8 +535,8 @@
             ]
         },
         {
-            "UID": 576329676,
-            "ParentUID": 1701842916,
+            "UID": 606411409,
+            "ParentUID": 1807057715,
             "Name": "Lvl2_Wall_Zone1_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -614,8 +614,8 @@
             ]
         },
         {
-            "UID": 4084649982,
-            "ParentUID": 576329676,
+            "UID": 2345219882,
+            "ParentUID": 606411409,
             "Name": "Lvl2_Wall_Zone1",
             "Tag": "Default",
             "Static": 0,
@@ -693,8 +693,8 @@
             ]
         },
         {
-            "UID": 1394539066,
-            "ParentUID": 2753545522,
+            "UID": 165123459,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -829,8 +829,8 @@
             ]
         },
         {
-            "UID": 1643777351,
-            "ParentUID": 2753545522,
+            "UID": 61058435,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Wall_Zone2_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -908,8 +908,8 @@
             ]
         },
         {
-            "UID": 1950546172,
-            "ParentUID": 1643777351,
+            "UID": 290934919,
+            "ParentUID": 61058435,
             "Name": "Lvl2_Wall_Zone2_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -987,8 +987,8 @@
             ]
         },
         {
-            "UID": 3934660567,
-            "ParentUID": 1950546172,
+            "UID": 3292352606,
+            "ParentUID": 290934919,
             "Name": "Lvl2_Wall_Zone2",
             "Tag": "Default",
             "Static": 0,
@@ -1066,8 +1066,8 @@
             ]
         },
         {
-            "UID": 108500095,
-            "ParentUID": 2753545522,
+            "UID": 911218824,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1202,8 +1202,8 @@
             ]
         },
         {
-            "UID": 1774637394,
-            "ParentUID": 2753545522,
+            "UID": 531574660,
+            "ParentUID": 529696969,
             "Name": "3_Floor_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1281,8 +1281,8 @@
             ]
         },
         {
-            "UID": 2018420172,
-            "ParentUID": 1774637394,
+            "UID": 3901226055,
+            "ParentUID": 531574660,
             "Name": "3_Floor_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1360,8 +1360,8 @@
             ]
         },
         {
-            "UID": 1216691954,
-            "ParentUID": 2018420172,
+            "UID": 3836798244,
+            "ParentUID": 3901226055,
             "Name": "3_Floor",
             "Tag": "Default",
             "Static": 0,
@@ -1439,8 +1439,8 @@
             ]
         },
         {
-            "UID": 3900821007,
-            "ParentUID": 2753545522,
+            "UID": 4081651714,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1575,8 +1575,8 @@
             ]
         },
         {
-            "UID": 4279562971,
-            "ParentUID": 2753545522,
+            "UID": 47539555,
+            "ParentUID": 529696969,
             "Name": "2_Floor_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1654,8 +1654,8 @@
             ]
         },
         {
-            "UID": 2774750869,
-            "ParentUID": 4279562971,
+            "UID": 1543538745,
+            "ParentUID": 47539555,
             "Name": "2_Floor_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1733,8 +1733,8 @@
             ]
         },
         {
-            "UID": 1070656674,
-            "ParentUID": 2774750869,
+            "UID": 4274914765,
+            "ParentUID": 1543538745,
             "Name": "2_Floor",
             "Tag": "Default",
             "Static": 0,
@@ -1812,8 +1812,8 @@
             ]
         },
         {
-            "UID": 1715067706,
-            "ParentUID": 2753545522,
+            "UID": 764765685,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1948,8 +1948,8 @@
             ]
         },
         {
-            "UID": 1346138606,
-            "ParentUID": 2753545522,
+            "UID": 127985725,
+            "ParentUID": 529696969,
             "Name": "1_Floor_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2027,8 +2027,8 @@
             ]
         },
         {
-            "UID": 3724347466,
-            "ParentUID": 1346138606,
+            "UID": 3985111373,
+            "ParentUID": 127985725,
             "Name": "1_Floor_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2106,8 +2106,8 @@
             ]
         },
         {
-            "UID": 3243846578,
-            "ParentUID": 3724347466,
+            "UID": 534388392,
+            "ParentUID": 3985111373,
             "Name": "1_Floor",
             "Tag": "Default",
             "Static": 0,
@@ -2185,8 +2185,8 @@
             ]
         },
         {
-            "UID": 980012939,
-            "ParentUID": 2753545522,
+            "UID": 249077573,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -2321,8 +2321,8 @@
             ]
         },
         {
-            "UID": 3697890668,
-            "ParentUID": 2753545522,
+            "UID": 3448182038,
+            "ParentUID": 529696969,
             "Name": "ThroneHole_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2400,8 +2400,8 @@
             ]
         },
         {
-            "UID": 3979931738,
-            "ParentUID": 3697890668,
+            "UID": 998346655,
+            "ParentUID": 3448182038,
             "Name": "ThroneHole_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2479,8 +2479,8 @@
             ]
         },
         {
-            "UID": 116026970,
-            "ParentUID": 3979931738,
+            "UID": 1989061516,
+            "ParentUID": 998346655,
             "Name": "ThroneHole",
             "Tag": "Default",
             "Static": 0,
@@ -2558,8 +2558,8 @@
             ]
         },
         {
-            "UID": 3954924911,
-            "ParentUID": 2753545522,
+            "UID": 1395938121,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -2694,8 +2694,8 @@
             ]
         },
         {
-            "UID": 793740534,
-            "ParentUID": 2753545522,
+            "UID": 4010617427,
+            "ParentUID": 529696969,
             "Name": "0_Floor_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2773,8 +2773,8 @@
             ]
         },
         {
-            "UID": 4265899965,
-            "ParentUID": 793740534,
+            "UID": 3271169883,
+            "ParentUID": 4010617427,
             "Name": "0_Floor_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2852,8 +2852,8 @@
             ]
         },
         {
-            "UID": 929778776,
-            "ParentUID": 4265899965,
+            "UID": 3297845205,
+            "ParentUID": 3271169883,
             "Name": "0_Floor",
             "Tag": "Default",
             "Static": 0,
@@ -2931,8 +2931,8 @@
             ]
         },
         {
-            "UID": 2551650699,
-            "ParentUID": 2753545522,
+            "UID": 3118819016,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -3067,8 +3067,8 @@
             ]
         },
         {
-            "UID": 3869100052,
-            "ParentUID": 2753545522,
+            "UID": 3759991421,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Boss_Throne_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3146,8 +3146,8 @@
             ]
         },
         {
-            "UID": 292754484,
-            "ParentUID": 3869100052,
+            "UID": 820627537,
+            "ParentUID": 3759991421,
             "Name": "Lvl2_Boss_Throne_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3225,8 +3225,8 @@
             ]
         },
         {
-            "UID": 4283761193,
-            "ParentUID": 292754484,
+            "UID": 3493402599,
+            "ParentUID": 820627537,
             "Name": "Lvl2_Boss_Throne",
             "Tag": "Default",
             "Static": 0,
@@ -3304,8 +3304,8 @@
             ]
         },
         {
-            "UID": 3464812882,
-            "ParentUID": 2753545522,
+            "UID": 946540737,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -3440,8 +3440,8 @@
             ]
         },
         {
-            "UID": 3173634512,
-            "ParentUID": 2753545522,
+            "UID": 2876599213,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Water00_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3519,8 +3519,8 @@
             ]
         },
         {
-            "UID": 1270182015,
-            "ParentUID": 3173634512,
+            "UID": 4121776456,
+            "ParentUID": 2876599213,
             "Name": "Lvl2_Water00_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3598,8 +3598,8 @@
             ]
         },
         {
-            "UID": 1258551814,
-            "ParentUID": 1270182015,
+            "UID": 101678696,
+            "ParentUID": 4121776456,
             "Name": "Lvl2_Water00",
             "Tag": "Default",
             "Static": 0,
@@ -3677,8 +3677,8 @@
             ]
         },
         {
-            "UID": 1971841622,
-            "ParentUID": 2753545522,
+            "UID": 1954874084,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -3813,8 +3813,8 @@
             ]
         },
         {
-            "UID": 3950823056,
-            "ParentUID": 2753545522,
+            "UID": 2701850639,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Gold_Figure_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3892,8 +3892,8 @@
             ]
         },
         {
-            "UID": 543263248,
-            "ParentUID": 3950823056,
+            "UID": 1345664201,
+            "ParentUID": 2701850639,
             "Name": "Lvl2_Gold_Figure_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3971,8 +3971,8 @@
             ]
         },
         {
-            "UID": 3094794584,
-            "ParentUID": 543263248,
+            "UID": 4270295609,
+            "ParentUID": 1345664201,
             "Name": "Lvl2_Gold_Figure",
             "Tag": "Default",
             "Static": 0,
@@ -4050,8 +4050,8 @@
             ]
         },
         {
-            "UID": 1713424693,
-            "ParentUID": 2753545522,
+            "UID": 1854713297,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -4186,8 +4186,8 @@
             ]
         },
         {
-            "UID": 1493339263,
-            "ParentUID": 2753545522,
+            "UID": 1542193657,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Treasure_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -4265,8 +4265,8 @@
             ]
         },
         {
-            "UID": 6629837,
-            "ParentUID": 1493339263,
+            "UID": 636875868,
+            "ParentUID": 1542193657,
             "Name": "Lvl2_Treasure_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -4344,8 +4344,8 @@
             ]
         },
         {
-            "UID": 3427620668,
-            "ParentUID": 6629837,
+            "UID": 1951973947,
+            "ParentUID": 636875868,
             "Name": "Lvl2_Treasure",
             "Tag": "Default",
             "Static": 0,
@@ -4423,8 +4423,8 @@
             ]
         },
         {
-            "UID": 1259965818,
-            "ParentUID": 2753545522,
+            "UID": 1639708083,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -4559,8 +4559,8 @@
             ]
         },
         {
-            "UID": 734749510,
-            "ParentUID": 2753545522,
+            "UID": 2073725020,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Water03_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -4638,8 +4638,8 @@
             ]
         },
         {
-            "UID": 2700807904,
-            "ParentUID": 734749510,
+            "UID": 2157870771,
+            "ParentUID": 2073725020,
             "Name": "Lvl2_Water03_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -4717,8 +4717,8 @@
             ]
         },
         {
-            "UID": 2033896990,
-            "ParentUID": 2700807904,
+            "UID": 1990484681,
+            "ParentUID": 2157870771,
             "Name": "Lvl2_Water03",
             "Tag": "Default",
             "Static": 0,
@@ -4796,8 +4796,8 @@
             ]
         },
         {
-            "UID": 4102747943,
-            "ParentUID": 2753545522,
+            "UID": 1396307978,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -4932,8 +4932,8 @@
             ]
         },
         {
-            "UID": 2594631162,
-            "ParentUID": 2753545522,
+            "UID": 147358715,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Water02_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5011,8 +5011,8 @@
             ]
         },
         {
-            "UID": 3599339671,
-            "ParentUID": 2594631162,
+            "UID": 3128020611,
+            "ParentUID": 147358715,
             "Name": "Lvl2_Water02_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5090,8 +5090,8 @@
             ]
         },
         {
-            "UID": 2859784440,
-            "ParentUID": 3599339671,
+            "UID": 946347119,
+            "ParentUID": 3128020611,
             "Name": "Lvl2_Water02",
             "Tag": "Default",
             "Static": 0,
@@ -5169,8 +5169,8 @@
             ]
         },
         {
-            "UID": 2967101155,
-            "ParentUID": 2753545522,
+            "UID": 1202257702,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -5305,8 +5305,8 @@
             ]
         },
         {
-            "UID": 4195187947,
-            "ParentUID": 2753545522,
+            "UID": 2829841908,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Water01_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5384,8 +5384,8 @@
             ]
         },
         {
-            "UID": 390365624,
-            "ParentUID": 4195187947,
+            "UID": 1677976711,
+            "ParentUID": 2829841908,
             "Name": "Lvl2_Water01_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5463,8 +5463,8 @@
             ]
         },
         {
-            "UID": 3532298742,
-            "ParentUID": 390365624,
+            "UID": 2986538324,
+            "ParentUID": 1677976711,
             "Name": "Lvl2_Water01",
             "Tag": "Default",
             "Static": 0,
@@ -5542,8 +5542,8 @@
             ]
         },
         {
-            "UID": 871427948,
-            "ParentUID": 2753545522,
+            "UID": 1628990787,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -5678,8 +5678,8 @@
             ]
         },
         {
-            "UID": 186957500,
-            "ParentUID": 2753545522,
+            "UID": 688103208,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Vessel_Tall_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5757,8 +5757,8 @@
             ]
         },
         {
-            "UID": 4048633326,
-            "ParentUID": 186957500,
+            "UID": 1949760877,
+            "ParentUID": 688103208,
             "Name": "Lvl2_Vessel_Tall_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5836,8 +5836,8 @@
             ]
         },
         {
-            "UID": 21968237,
-            "ParentUID": 4048633326,
+            "UID": 3053678096,
+            "ParentUID": 1949760877,
             "Name": "Lvl2_Vessel_Tall",
             "Tag": "Default",
             "Static": 0,
@@ -5915,8 +5915,8 @@
             ]
         },
         {
-            "UID": 4001370941,
-            "ParentUID": 2753545522,
+            "UID": 1531075503,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -6051,8 +6051,8 @@
             ]
         },
         {
-            "UID": 2092534880,
-            "ParentUID": 2753545522,
+            "UID": 2746818817,
+            "ParentUID": 529696969,
             "Name": "Lvl2_VesselFat_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6130,8 +6130,8 @@
             ]
         },
         {
-            "UID": 861504884,
-            "ParentUID": 2092534880,
+            "UID": 1692565277,
+            "ParentUID": 2746818817,
             "Name": "Lvl2_VesselFat_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6209,8 +6209,8 @@
             ]
         },
         {
-            "UID": 729374519,
-            "ParentUID": 861504884,
+            "UID": 341551073,
+            "ParentUID": 1692565277,
             "Name": "Lvl2_VesselFat",
             "Tag": "Default",
             "Static": 0,
@@ -6288,8 +6288,8 @@
             ]
         },
         {
-            "UID": 289785933,
-            "ParentUID": 2753545522,
+            "UID": 1335135381,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -6424,8 +6424,8 @@
             ]
         },
         {
-            "UID": 411134137,
-            "ParentUID": 2753545522,
+            "UID": 3701369576,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Chest_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6503,8 +6503,8 @@
             ]
         },
         {
-            "UID": 1268388986,
-            "ParentUID": 411134137,
+            "UID": 2973071706,
+            "ParentUID": 3701369576,
             "Name": "Lvl2_Chest_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6582,8 +6582,8 @@
             ]
         },
         {
-            "UID": 3885054327,
-            "ParentUID": 1268388986,
+            "UID": 549916848,
+            "ParentUID": 2973071706,
             "Name": "Lvl2_Chest",
             "Tag": "Default",
             "Static": 0,
@@ -6661,8 +6661,8 @@
             ]
         },
         {
-            "UID": 2685787526,
-            "ParentUID": 2753545522,
+            "UID": 3881997120,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -6797,8 +6797,8 @@
             ]
         },
         {
-            "UID": 2728129753,
-            "ParentUID": 2753545522,
+            "UID": 2173802337,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Mask_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6876,8 +6876,8 @@
             ]
         },
         {
-            "UID": 3968540520,
-            "ParentUID": 2728129753,
+            "UID": 4255085875,
+            "ParentUID": 2173802337,
             "Name": "Lvl2_Mask_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6955,8 +6955,8 @@
             ]
         },
         {
-            "UID": 3613781215,
-            "ParentUID": 3968540520,
+            "UID": 3113519984,
+            "ParentUID": 4255085875,
             "Name": "Lvl2_Mask",
             "Tag": "Default",
             "Static": 0,
@@ -7034,8 +7034,8 @@
             ]
         },
         {
-            "UID": 490364816,
-            "ParentUID": 2753545522,
+            "UID": 2031057673,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -7170,8 +7170,8 @@
             ]
         },
         {
-            "UID": 2463792377,
-            "ParentUID": 2753545522,
+            "UID": 3176558247,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Spiker_trap_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7249,8 +7249,8 @@
             ]
         },
         {
-            "UID": 3497560281,
-            "ParentUID": 2463792377,
+            "UID": 2300269567,
+            "ParentUID": 3176558247,
             "Name": "Lvl2_Spiker_trap_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -7328,8 +7328,8 @@
             ]
         },
         {
-            "UID": 800668266,
-            "ParentUID": 3497560281,
+            "UID": 2360275410,
+            "ParentUID": 2300269567,
             "Name": "Lvl2_Spiker_trap",
             "Tag": "Default",
             "Static": 0,
@@ -7407,8 +7407,8 @@
             ]
         },
         {
-            "UID": 69944280,
-            "ParentUID": 2753545522,
+            "UID": 628128836,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -7543,8 +7543,8 @@
             ]
         },
         {
-            "UID": 4265897098,
-            "ParentUID": 2753545522,
+            "UID": 427442981,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Candles_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7622,8 +7622,8 @@
             ]
         },
         {
-            "UID": 2901875304,
-            "ParentUID": 4265897098,
+            "UID": 1933325422,
+            "ParentUID": 427442981,
             "Name": "Lvl2_Candles_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -7701,8 +7701,8 @@
             ]
         },
         {
-            "UID": 3058815920,
-            "ParentUID": 2901875304,
+            "UID": 1381990480,
+            "ParentUID": 1933325422,
             "Name": "Lvl2_Candles",
             "Tag": "Default",
             "Static": 0,
@@ -7780,8 +7780,8 @@
             ]
         },
         {
-            "UID": 1813816122,
-            "ParentUID": 2753545522,
+            "UID": 2614071233,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -7916,8 +7916,8 @@
             ]
         },
         {
-            "UID": 1580108803,
-            "ParentUID": 2753545522,
+            "UID": 501419977,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Checkpoint_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7995,8 +7995,8 @@
             ]
         },
         {
-            "UID": 661846068,
-            "ParentUID": 1580108803,
+            "UID": 3117026918,
+            "ParentUID": 501419977,
             "Name": "Lvl2_Checkpoint_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8074,8 +8074,8 @@
             ]
         },
         {
-            "UID": 250987578,
-            "ParentUID": 661846068,
+            "UID": 3262587991,
+            "ParentUID": 3117026918,
             "Name": "Lvl2_Checkpoint",
             "Tag": "Default",
             "Static": 0,
@@ -8153,8 +8153,8 @@
             ]
         },
         {
-            "UID": 1125182733,
-            "ParentUID": 2753545522,
+            "UID": 2036787352,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -8289,8 +8289,8 @@
             ]
         },
         {
-            "UID": 3381501340,
-            "ParentUID": 2753545522,
+            "UID": 968460528,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Head_Fountain_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -8368,8 +8368,8 @@
             ]
         },
         {
-            "UID": 3490029979,
-            "ParentUID": 3381501340,
+            "UID": 1529980845,
+            "ParentUID": 968460528,
             "Name": "Lvl2_Head_Fountain_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8447,8 +8447,8 @@
             ]
         },
         {
-            "UID": 3873716632,
-            "ParentUID": 3490029979,
+            "UID": 305871556,
+            "ParentUID": 1529980845,
             "Name": "Lvl2_Head_Fountain",
             "Tag": "Default",
             "Static": 0,
@@ -8526,8 +8526,8 @@
             ]
         },
         {
-            "UID": 3376065703,
-            "ParentUID": 2753545522,
+            "UID": 3007696162,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -8662,8 +8662,8 @@
             ]
         },
         {
-            "UID": 2645020633,
-            "ParentUID": 2753545522,
+            "UID": 1294299841,
+            "ParentUID": 529696969,
             "Name": "Lvl2_TorchHand_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -8741,8 +8741,8 @@
             ]
         },
         {
-            "UID": 559976285,
-            "ParentUID": 2645020633,
+            "UID": 2057941576,
+            "ParentUID": 1294299841,
             "Name": "Lvl2_TorchHand_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8820,8 +8820,8 @@
             ]
         },
         {
-            "UID": 1368701071,
-            "ParentUID": 559976285,
+            "UID": 1691380258,
+            "ParentUID": 2057941576,
             "Name": "Lvl2_TorchHand",
             "Tag": "Default",
             "Static": 0,
@@ -8899,8 +8899,8 @@
             ]
         },
         {
-            "UID": 1649361892,
-            "ParentUID": 2753545522,
+            "UID": 3064158099,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -9035,8 +9035,8 @@
             ]
         },
         {
-            "UID": 57551342,
-            "ParentUID": 2753545522,
+            "UID": 1003162015,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Statue_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9114,8 +9114,8 @@
             ]
         },
         {
-            "UID": 2878597599,
-            "ParentUID": 57551342,
+            "UID": 853496294,
+            "ParentUID": 1003162015,
             "Name": "Lvl2_Statue_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9193,8 +9193,8 @@
             ]
         },
         {
-            "UID": 3121345316,
-            "ParentUID": 2878597599,
+            "UID": 3135386849,
+            "ParentUID": 853496294,
             "Name": "Lvl2_Statue",
             "Tag": "Default",
             "Static": 0,
@@ -9272,8 +9272,8 @@
             ]
         },
         {
-            "UID": 2644610546,
-            "ParentUID": 2753545522,
+            "UID": 2802403153,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -9408,8 +9408,8 @@
             ]
         },
         {
-            "UID": 3763044278,
-            "ParentUID": 2753545522,
+            "UID": 79336007,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Boss_TorchHand_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9487,8 +9487,8 @@
             ]
         },
         {
-            "UID": 4006248926,
-            "ParentUID": 3763044278,
+            "UID": 698656884,
+            "ParentUID": 79336007,
             "Name": "Lvl2_Boss_TorchHand_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9566,8 +9566,8 @@
             ]
         },
         {
-            "UID": 1605134268,
-            "ParentUID": 4006248926,
+            "UID": 1874659433,
+            "ParentUID": 698656884,
             "Name": "Lvl2_Boss_TorchHand",
             "Tag": "Default",
             "Static": 0,
@@ -9645,8 +9645,8 @@
             ]
         },
         {
-            "UID": 950842962,
-            "ParentUID": 2753545522,
+            "UID": 3389731608,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -9781,8 +9781,8 @@
             ]
         },
         {
-            "UID": 1045452576,
-            "ParentUID": 2753545522,
+            "UID": 3945410849,
+            "ParentUID": 529696969,
             "Name": "Lvl2_ Boss_Column_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9860,8 +9860,8 @@
             ]
         },
         {
-            "UID": 1244311037,
-            "ParentUID": 1045452576,
+            "UID": 4029776327,
+            "ParentUID": 3945410849,
             "Name": "Lvl2_ Boss_Column_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9939,8 +9939,8 @@
             ]
         },
         {
-            "UID": 22474047,
-            "ParentUID": 1244311037,
+            "UID": 900530990,
+            "ParentUID": 4029776327,
             "Name": "Lvl2_ Boss_Column",
             "Tag": "Default",
             "Static": 0,
@@ -10018,8 +10018,8 @@
             ]
         },
         {
-            "UID": 3049744242,
-            "ParentUID": 2753545522,
+            "UID": 3900342553,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -10154,8 +10154,8 @@
             ]
         },
         {
-            "UID": 757132123,
-            "ParentUID": 2753545522,
+            "UID": 3992883453,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Jail_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10233,8 +10233,8 @@
             ]
         },
         {
-            "UID": 3695965121,
-            "ParentUID": 757132123,
+            "UID": 2112983498,
+            "ParentUID": 3992883453,
             "Name": "Lvl2_Jail_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -10312,8 +10312,8 @@
             ]
         },
         {
-            "UID": 1209075380,
-            "ParentUID": 3695965121,
+            "UID": 989040327,
+            "ParentUID": 2112983498,
             "Name": "Lvl2_Jail",
             "Tag": "Default",
             "Static": 0,
@@ -10391,8 +10391,8 @@
             ]
         },
         {
-            "UID": 3118246102,
-            "ParentUID": 2753545522,
+            "UID": 3488744425,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -10527,8 +10527,8 @@
             ]
         },
         {
-            "UID": 537080005,
-            "ParentUID": 2753545522,
+            "UID": 58905221,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Snake_Fountain_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10606,8 +10606,8 @@
             ]
         },
         {
-            "UID": 2188344770,
-            "ParentUID": 537080005,
+            "UID": 108797643,
+            "ParentUID": 58905221,
             "Name": "Lvl2_Snake_Fountain_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -10685,8 +10685,8 @@
             ]
         },
         {
-            "UID": 1903582380,
-            "ParentUID": 2188344770,
+            "UID": 2071698657,
+            "ParentUID": 108797643,
             "Name": "Lvl2_Snake_Fountain",
             "Tag": "Default",
             "Static": 0,
@@ -10764,8 +10764,8 @@
             ]
         },
         {
-            "UID": 1624878228,
-            "ParentUID": 2753545522,
+            "UID": 360910716,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -10900,8 +10900,8 @@
             ]
         },
         {
-            "UID": 2965371141,
-            "ParentUID": 2753545522,
+            "UID": 2549269049,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Armory_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10979,8 +10979,8 @@
             ]
         },
         {
-            "UID": 4078107559,
-            "ParentUID": 2965371141,
+            "UID": 2958911863,
+            "ParentUID": 2549269049,
             "Name": "Lvl2_Armory_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -11058,8 +11058,8 @@
             ]
         },
         {
-            "UID": 668688549,
-            "ParentUID": 4078107559,
+            "UID": 3714278800,
+            "ParentUID": 2958911863,
             "Name": "Lvl2_Armory",
             "Tag": "Default",
             "Static": 0,
@@ -11137,8 +11137,8 @@
             ]
         },
         {
-            "UID": 417412382,
-            "ParentUID": 2753545522,
+            "UID": 2877231391,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -11273,8 +11273,8 @@
             ]
         },
         {
-            "UID": 4197043655,
-            "ParentUID": 2753545522,
+            "UID": 3067693408,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Wall_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -11352,8 +11352,8 @@
             ]
         },
         {
-            "UID": 1952816014,
-            "ParentUID": 4197043655,
+            "UID": 279451443,
+            "ParentUID": 3067693408,
             "Name": "Lvl2_Wall_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -11431,8 +11431,8 @@
             ]
         },
         {
-            "UID": 2116591239,
-            "ParentUID": 1952816014,
+            "UID": 1717134012,
+            "ParentUID": 279451443,
             "Name": "Lvl2_Wall",
             "Tag": "Default",
             "Static": 0,
@@ -11510,8 +11510,8 @@
             ]
         },
         {
-            "UID": 3544709993,
-            "ParentUID": 2753545522,
+            "UID": 98939479,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -11646,8 +11646,8 @@
             ]
         },
         {
-            "UID": 747603301,
-            "ParentUID": 2753545522,
+            "UID": 2453529919,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Column_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -11725,8 +11725,8 @@
             ]
         },
         {
-            "UID": 1665205333,
-            "ParentUID": 747603301,
+            "UID": 134025198,
+            "ParentUID": 2453529919,
             "Name": "Lvl2_Column_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -11804,8 +11804,8 @@
             ]
         },
         {
-            "UID": 3896331357,
-            "ParentUID": 1665205333,
+            "UID": 2439130896,
+            "ParentUID": 134025198,
             "Name": "Lvl2_Column",
             "Tag": "Default",
             "Static": 0,
@@ -11883,8 +11883,8 @@
             ]
         },
         {
-            "UID": 2111815117,
-            "ParentUID": 2753545522,
+            "UID": 214035972,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -12019,8 +12019,8 @@
             ]
         },
         {
-            "UID": 1289518049,
-            "ParentUID": 2753545522,
+            "UID": 2239977112,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Cauldron_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -12098,8 +12098,8 @@
             ]
         },
         {
-            "UID": 456739069,
-            "ParentUID": 1289518049,
+            "UID": 3583703236,
+            "ParentUID": 2239977112,
             "Name": "Lvl2_Cauldron_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -12177,8 +12177,8 @@
             ]
         },
         {
-            "UID": 2201754929,
-            "ParentUID": 456739069,
+            "UID": 1244018059,
+            "ParentUID": 3583703236,
             "Name": "Lvl2_Cauldron",
             "Tag": "Default",
             "Static": 0,
@@ -12256,8 +12256,8 @@
             ]
         },
         {
-            "UID": 2323040467,
-            "ParentUID": 2753545522,
+            "UID": 3255474952,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -12392,8 +12392,8 @@
             ]
         },
         {
-            "UID": 4276612567,
-            "ParentUID": 2753545522,
+            "UID": 3990214097,
+            "ParentUID": 529696969,
             "Name": "Lvl2_Stairs_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -12471,8 +12471,8 @@
             ]
         },
         {
-            "UID": 835772830,
-            "ParentUID": 4276612567,
+            "UID": 879225871,
+            "ParentUID": 3990214097,
             "Name": "Lvl2_Stairs_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -12550,8 +12550,8 @@
             ]
         },
         {
-            "UID": 1955229935,
-            "ParentUID": 835772830,
+            "UID": 3953860589,
+            "ParentUID": 879225871,
             "Name": "Lvl2_Stairs",
             "Tag": "Default",
             "Static": 0,
@@ -12629,8 +12629,8 @@
             ]
         },
         {
-            "UID": 1737538470,
-            "ParentUID": 2753545522,
+            "UID": 3506241729,
+            "ParentUID": 529696969,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 182164953,
+            "UID": 2943835501,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -88,8 +88,8 @@
             ]
         },
         {
-            "UID": 1857270795,
-            "ParentUID": 182164953,
+            "UID": 3368929302,
+            "ParentUID": 2943835501,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint1_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "UID": 1942769567,
-            "ParentUID": 1857270795,
+            "UID": 3794048980,
+            "ParentUID": 3368929302,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint1_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -246,8 +246,8 @@
             ]
         },
         {
-            "UID": 4112097013,
-            "ParentUID": 1942769567,
+            "UID": 469884405,
+            "ParentUID": 3794048980,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint1_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -325,8 +325,8 @@
             ]
         },
         {
-            "UID": 269162931,
-            "ParentUID": 4112097013,
+            "UID": 1035097991,
+            "ParentUID": 469884405,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint1",
             "Tag": "Default",
             "Static": 0,
@@ -404,8 +404,8 @@
             ]
         },
         {
-            "UID": 1334614292,
-            "ParentUID": 269162931,
+            "UID": 2568251142,
+            "ParentUID": 1035097991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint31_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -483,8 +483,8 @@
             ]
         },
         {
-            "UID": 4014815521,
-            "ParentUID": 1334614292,
+            "UID": 2420496224,
+            "ParentUID": 2568251142,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint31_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -562,8 +562,8 @@
             ]
         },
         {
-            "UID": 1182049315,
-            "ParentUID": 4014815521,
+            "UID": 4293219821,
+            "ParentUID": 2420496224,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint31_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -641,8 +641,8 @@
             ]
         },
         {
-            "UID": 3032187602,
-            "ParentUID": 1182049315,
+            "UID": 3081992610,
+            "ParentUID": 4293219821,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint31",
             "Tag": "Default",
             "Static": 0,
@@ -720,8 +720,8 @@
             ]
         },
         {
-            "UID": 2246932408,
-            "ParentUID": 3032187602,
+            "UID": 1251310329,
+            "ParentUID": 3081992610,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint32_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -799,8 +799,8 @@
             ]
         },
         {
-            "UID": 1859093318,
-            "ParentUID": 2246932408,
+            "UID": 4227201497,
+            "ParentUID": 1251310329,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint32_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -878,8 +878,8 @@
             ]
         },
         {
-            "UID": 2825832890,
-            "ParentUID": 1859093318,
+            "UID": 957047994,
+            "ParentUID": 4227201497,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint32_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -957,8 +957,8 @@
             ]
         },
         {
-            "UID": 838511369,
-            "ParentUID": 2825832890,
+            "UID": 2575058993,
+            "ParentUID": 957047994,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint32",
             "Tag": "Default",
             "Static": 0,
@@ -1036,8 +1036,8 @@
             ]
         },
         {
-            "UID": 3331378623,
-            "ParentUID": 838511369,
+            "UID": 229607226,
+            "ParentUID": 2575058993,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint33_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1115,8 +1115,8 @@
             ]
         },
         {
-            "UID": 3982505152,
-            "ParentUID": 3331378623,
+            "UID": 747799231,
+            "ParentUID": 229607226,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint33_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1194,8 +1194,8 @@
             ]
         },
         {
-            "UID": 3282986044,
-            "ParentUID": 3982505152,
+            "UID": 1325874371,
+            "ParentUID": 747799231,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint33_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -1273,8 +1273,8 @@
             ]
         },
         {
-            "UID": 2115439998,
-            "ParentUID": 3282986044,
+            "UID": 1000548144,
+            "ParentUID": 1325874371,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint33",
             "Tag": "Default",
             "Static": 0,
@@ -1352,8 +1352,8 @@
             ]
         },
         {
-            "UID": 4220105546,
-            "ParentUID": 269162931,
+            "UID": 2556630622,
+            "ParentUID": 1035097991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint34_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1431,8 +1431,8 @@
             ]
         },
         {
-            "UID": 1254573277,
-            "ParentUID": 4220105546,
+            "UID": 841481392,
+            "ParentUID": 2556630622,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint34_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1510,8 +1510,8 @@
             ]
         },
         {
-            "UID": 3251574358,
-            "ParentUID": 1254573277,
+            "UID": 139875834,
+            "ParentUID": 841481392,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint34_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -1589,8 +1589,8 @@
             ]
         },
         {
-            "UID": 2015434637,
-            "ParentUID": 3251574358,
+            "UID": 573691956,
+            "ParentUID": 139875834,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint34",
             "Tag": "Default",
             "Static": 0,
@@ -1668,8 +1668,8 @@
             ]
         },
         {
-            "UID": 3955456031,
-            "ParentUID": 2015434637,
+            "UID": 2489834216,
+            "ParentUID": 573691956,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint35_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1747,8 +1747,8 @@
             ]
         },
         {
-            "UID": 4238806930,
-            "ParentUID": 3955456031,
+            "UID": 627275661,
+            "ParentUID": 2489834216,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint35_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -1826,8 +1826,8 @@
             ]
         },
         {
-            "UID": 1629466873,
-            "ParentUID": 4238806930,
+            "UID": 3520576126,
+            "ParentUID": 627275661,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint35",
             "Tag": "Default",
             "Static": 0,
@@ -1905,8 +1905,8 @@
             ]
         },
         {
-            "UID": 1031797469,
-            "ParentUID": 1629466873,
+            "UID": 468829588,
+            "ParentUID": 3520576126,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint36_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1984,8 +1984,8 @@
             ]
         },
         {
-            "UID": 2108437788,
-            "ParentUID": 1031797469,
+            "UID": 160886908,
+            "ParentUID": 468829588,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint36_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2063,8 +2063,8 @@
             ]
         },
         {
-            "UID": 1874366222,
-            "ParentUID": 2108437788,
+            "UID": 2409766607,
+            "ParentUID": 160886908,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint36_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -2142,8 +2142,8 @@
             ]
         },
         {
-            "UID": 4228180789,
-            "ParentUID": 1874366222,
+            "UID": 2422625135,
+            "ParentUID": 2409766607,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint36",
             "Tag": "Default",
             "Static": 0,
@@ -2221,8 +2221,8 @@
             ]
         },
         {
-            "UID": 1574249558,
-            "ParentUID": 269162931,
+            "UID": 378843904,
+            "ParentUID": 1035097991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint23_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2300,8 +2300,8 @@
             ]
         },
         {
-            "UID": 3714561812,
-            "ParentUID": 1574249558,
+            "UID": 1178162687,
+            "ParentUID": 378843904,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint23_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2379,8 +2379,8 @@
             ]
         },
         {
-            "UID": 891805328,
-            "ParentUID": 3714561812,
+            "UID": 3116334887,
+            "ParentUID": 1178162687,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint23_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -2458,8 +2458,8 @@
             ]
         },
         {
-            "UID": 1311685090,
-            "ParentUID": 891805328,
+            "UID": 2151457265,
+            "ParentUID": 3116334887,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint23",
             "Tag": "Default",
             "Static": 0,
@@ -2537,8 +2537,8 @@
             ]
         },
         {
-            "UID": 1912264182,
-            "ParentUID": 1311685090,
+            "UID": 3683774270,
+            "ParentUID": 2151457265,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint24_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2616,8 +2616,8 @@
             ]
         },
         {
-            "UID": 3954187225,
-            "ParentUID": 1912264182,
+            "UID": 3803370541,
+            "ParentUID": 3683774270,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint24_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2695,8 +2695,8 @@
             ]
         },
         {
-            "UID": 940834736,
-            "ParentUID": 3954187225,
+            "UID": 3761242173,
+            "ParentUID": 3803370541,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint24_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -2774,8 +2774,8 @@
             ]
         },
         {
-            "UID": 3916431921,
-            "ParentUID": 940834736,
+            "UID": 4255726675,
+            "ParentUID": 3761242173,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint24",
             "Tag": "Default",
             "Static": 0,
@@ -2853,8 +2853,8 @@
             ]
         },
         {
-            "UID": 2435542423,
-            "ParentUID": 3916431921,
+            "UID": 2553284609,
+            "ParentUID": 4255726675,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint25_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2932,8 +2932,8 @@
             ]
         },
         {
-            "UID": 2488551965,
-            "ParentUID": 2435542423,
+            "UID": 659407437,
+            "ParentUID": 2553284609,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint25_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3011,8 +3011,8 @@
             ]
         },
         {
-            "UID": 4218161914,
-            "ParentUID": 2488551965,
+            "UID": 957944478,
+            "ParentUID": 659407437,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint25_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -3090,8 +3090,8 @@
             ]
         },
         {
-            "UID": 207461539,
-            "ParentUID": 4218161914,
+            "UID": 1379432604,
+            "ParentUID": 957944478,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint25",
             "Tag": "Default",
             "Static": 0,
@@ -3169,8 +3169,8 @@
             ]
         },
         {
-            "UID": 3108455445,
-            "ParentUID": 207461539,
+            "UID": 746515940,
+            "ParentUID": 1379432604,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint26_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3248,8 +3248,8 @@
             ]
         },
         {
-            "UID": 873506205,
-            "ParentUID": 3108455445,
+            "UID": 1072769223,
+            "ParentUID": 746515940,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint26_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3327,8 +3327,8 @@
             ]
         },
         {
-            "UID": 3991216339,
-            "ParentUID": 873506205,
+            "UID": 2284353114,
+            "ParentUID": 1072769223,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint26_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -3406,8 +3406,8 @@
             ]
         },
         {
-            "UID": 1505404858,
-            "ParentUID": 3991216339,
+            "UID": 1458640285,
+            "ParentUID": 2284353114,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint26",
             "Tag": "Default",
             "Static": 0,
@@ -3485,8 +3485,8 @@
             ]
         },
         {
-            "UID": 2548407579,
-            "ParentUID": 269162931,
+            "UID": 3216860194,
+            "ParentUID": 1035097991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint5_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3564,8 +3564,8 @@
             ]
         },
         {
-            "UID": 135183736,
-            "ParentUID": 2548407579,
+            "UID": 1985259643,
+            "ParentUID": 3216860194,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint5_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3643,8 +3643,8 @@
             ]
         },
         {
-            "UID": 387313533,
-            "ParentUID": 135183736,
+            "UID": 1792620339,
+            "ParentUID": 1985259643,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint5_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -3722,8 +3722,8 @@
             ]
         },
         {
-            "UID": 3111737481,
-            "ParentUID": 387313533,
+            "UID": 2564892157,
+            "ParentUID": 1792620339,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint5",
             "Tag": "Default",
             "Static": 0,
@@ -3801,8 +3801,8 @@
             ]
         },
         {
-            "UID": 2760067144,
-            "ParentUID": 3111737481,
+            "UID": 898512298,
+            "ParentUID": 2564892157,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint6_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -3880,8 +3880,8 @@
             ]
         },
         {
-            "UID": 2859570704,
-            "ParentUID": 2760067144,
+            "UID": 530041928,
+            "ParentUID": 898512298,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint6_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -3959,8 +3959,8 @@
             ]
         },
         {
-            "UID": 596784555,
-            "ParentUID": 2859570704,
+            "UID": 47847741,
+            "ParentUID": 530041928,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint6_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -4038,8 +4038,8 @@
             ]
         },
         {
-            "UID": 362321533,
-            "ParentUID": 596784555,
+            "UID": 4183083202,
+            "ParentUID": 47847741,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint6",
             "Tag": "Default",
             "Static": 0,
@@ -4117,8 +4117,8 @@
             ]
         },
         {
-            "UID": 2860244197,
-            "ParentUID": 362321533,
+            "UID": 2436191912,
+            "ParentUID": 4183083202,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint7_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -4196,8 +4196,8 @@
             ]
         },
         {
-            "UID": 2459986479,
-            "ParentUID": 2860244197,
+            "UID": 539788865,
+            "ParentUID": 2436191912,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint7_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -4275,8 +4275,8 @@
             ]
         },
         {
-            "UID": 192398418,
-            "ParentUID": 2459986479,
+            "UID": 1881635269,
+            "ParentUID": 539788865,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint7_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -4354,8 +4354,8 @@
             ]
         },
         {
-            "UID": 3642150782,
-            "ParentUID": 192398418,
+            "UID": 3009791019,
+            "ParentUID": 1881635269,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint7",
             "Tag": "Default",
             "Static": 0,
@@ -4433,8 +4433,8 @@
             ]
         },
         {
-            "UID": 1730114266,
-            "ParentUID": 3642150782,
+            "UID": 2291420599,
+            "ParentUID": 3009791019,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint8_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -4512,8 +4512,8 @@
             ]
         },
         {
-            "UID": 3617030062,
-            "ParentUID": 1730114266,
+            "UID": 950971954,
+            "ParentUID": 2291420599,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint8_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -4591,8 +4591,8 @@
             ]
         },
         {
-            "UID": 1784882682,
-            "ParentUID": 3617030062,
+            "UID": 2658784450,
+            "ParentUID": 950971954,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint8_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -4670,8 +4670,8 @@
             ]
         },
         {
-            "UID": 2395941784,
-            "ParentUID": 1784882682,
+            "UID": 3687316249,
+            "ParentUID": 2658784450,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint8",
             "Tag": "Default",
             "Static": 0,
@@ -4749,8 +4749,8 @@
             ]
         },
         {
-            "UID": 4032444660,
-            "ParentUID": 269162931,
+            "UID": 977947057,
+            "ParentUID": 1035097991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint2_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -4828,8 +4828,8 @@
             ]
         },
         {
-            "UID": 3589317862,
-            "ParentUID": 4032444660,
+            "UID": 2458581048,
+            "ParentUID": 977947057,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint2_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -4907,8 +4907,8 @@
             ]
         },
         {
-            "UID": 4239669369,
-            "ParentUID": 3589317862,
+            "UID": 327806982,
+            "ParentUID": 2458581048,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint2_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -4986,8 +4986,8 @@
             ]
         },
         {
-            "UID": 3399232789,
-            "ParentUID": 4239669369,
+            "UID": 1395790783,
+            "ParentUID": 327806982,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint2",
             "Tag": "Default",
             "Static": 0,
@@ -5065,8 +5065,8 @@
             ]
         },
         {
-            "UID": 412860270,
-            "ParentUID": 3399232789,
+            "UID": 575523305,
+            "ParentUID": 1395790783,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint3_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5144,8 +5144,8 @@
             ]
         },
         {
-            "UID": 1094523694,
-            "ParentUID": 412860270,
+            "UID": 2427253722,
+            "ParentUID": 575523305,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint3_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5223,8 +5223,8 @@
             ]
         },
         {
-            "UID": 2072893185,
-            "ParentUID": 1094523694,
+            "UID": 1674172179,
+            "ParentUID": 2427253722,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint3_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -5302,8 +5302,8 @@
             ]
         },
         {
-            "UID": 115177170,
-            "ParentUID": 2072893185,
+            "UID": 3556385679,
+            "ParentUID": 1674172179,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint3",
             "Tag": "Default",
             "Static": 0,
@@ -5381,8 +5381,8 @@
             ]
         },
         {
-            "UID": 327577675,
-            "ParentUID": 115177170,
+            "UID": 3881368496,
+            "ParentUID": 3556385679,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint16_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5460,8 +5460,8 @@
             ]
         },
         {
-            "UID": 2680861592,
-            "ParentUID": 327577675,
+            "UID": 247743976,
+            "ParentUID": 3881368496,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint16_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5539,8 +5539,8 @@
             ]
         },
         {
-            "UID": 213975060,
-            "ParentUID": 2680861592,
+            "UID": 728168936,
+            "ParentUID": 247743976,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint16_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -5618,8 +5618,8 @@
             ]
         },
         {
-            "UID": 3476767353,
-            "ParentUID": 213975060,
+            "UID": 2132127501,
+            "ParentUID": 728168936,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint16",
             "Tag": "Default",
             "Static": 0,
@@ -5697,8 +5697,8 @@
             ]
         },
         {
-            "UID": 3189055388,
-            "ParentUID": 3476767353,
+            "UID": 1922373246,
+            "ParentUID": 2132127501,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint17_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -5776,8 +5776,8 @@
             ]
         },
         {
-            "UID": 3947497891,
-            "ParentUID": 3189055388,
+            "UID": 3017759712,
+            "ParentUID": 1922373246,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint17_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -5855,8 +5855,8 @@
             ]
         },
         {
-            "UID": 1251584954,
-            "ParentUID": 3947497891,
+            "UID": 2659948400,
+            "ParentUID": 3017759712,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint17_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -5934,8 +5934,8 @@
             ]
         },
         {
-            "UID": 3503792865,
-            "ParentUID": 1251584954,
+            "UID": 1727792267,
+            "ParentUID": 2659948400,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint17",
             "Tag": "Default",
             "Static": 0,
@@ -6013,8 +6013,8 @@
             ]
         },
         {
-            "UID": 1281117827,
-            "ParentUID": 3503792865,
+            "UID": 2934961426,
+            "ParentUID": 1727792267,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint18_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6092,8 +6092,8 @@
             ]
         },
         {
-            "UID": 3377911730,
-            "ParentUID": 1281117827,
+            "UID": 1678162326,
+            "ParentUID": 2934961426,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint18_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6171,8 +6171,8 @@
             ]
         },
         {
-            "UID": 1110372289,
-            "ParentUID": 3377911730,
+            "UID": 426028389,
+            "ParentUID": 1678162326,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint18_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -6250,8 +6250,8 @@
             ]
         },
         {
-            "UID": 367840757,
-            "ParentUID": 1110372289,
+            "UID": 2756044700,
+            "ParentUID": 426028389,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint18",
             "Tag": "Default",
             "Static": 0,
@@ -6329,8 +6329,8 @@
             ]
         },
         {
-            "UID": 1833750667,
-            "ParentUID": 367840757,
+            "UID": 1974686324,
+            "ParentUID": 2756044700,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint21_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6408,8 +6408,8 @@
             ]
         },
         {
-            "UID": 362714475,
-            "ParentUID": 1833750667,
+            "UID": 2991421382,
+            "ParentUID": 1974686324,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint21_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6487,8 +6487,8 @@
             ]
         },
         {
-            "UID": 4282375715,
-            "ParentUID": 362714475,
+            "UID": 505463606,
+            "ParentUID": 2991421382,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint21_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -6566,8 +6566,8 @@
             ]
         },
         {
-            "UID": 3270460569,
-            "ParentUID": 4282375715,
+            "UID": 3223600541,
+            "ParentUID": 505463606,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint21",
             "Tag": "Default",
             "Static": 0,
@@ -6645,8 +6645,8 @@
             ]
         },
         {
-            "UID": 3551619605,
-            "ParentUID": 3270460569,
+            "UID": 1697643146,
+            "ParentUID": 3223600541,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint22_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -6724,8 +6724,8 @@
             ]
         },
         {
-            "UID": 1402908271,
-            "ParentUID": 3551619605,
+            "UID": 3895669937,
+            "ParentUID": 1697643146,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint22_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -6803,8 +6803,8 @@
             ]
         },
         {
-            "UID": 3769200481,
-            "ParentUID": 1402908271,
+            "UID": 1202587297,
+            "ParentUID": 3895669937,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint22_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -6882,8 +6882,8 @@
             ]
         },
         {
-            "UID": 2030409151,
-            "ParentUID": 3769200481,
+            "UID": 220185075,
+            "ParentUID": 1202587297,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint22",
             "Tag": "Default",
             "Static": 0,
@@ -6961,8 +6961,8 @@
             ]
         },
         {
-            "UID": 749819720,
-            "ParentUID": 367840757,
+            "UID": 3917724310,
+            "ParentUID": 2756044700,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint19_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7040,8 +7040,8 @@
             ]
         },
         {
-            "UID": 976259013,
-            "ParentUID": 749819720,
+            "UID": 4221522475,
+            "ParentUID": 3917724310,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint19_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -7119,8 +7119,8 @@
             ]
         },
         {
-            "UID": 2010872657,
-            "ParentUID": 976259013,
+            "UID": 660410682,
+            "ParentUID": 4221522475,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint19_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -7198,8 +7198,8 @@
             ]
         },
         {
-            "UID": 2126765249,
-            "ParentUID": 2010872657,
+            "UID": 243473597,
+            "ParentUID": 660410682,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint19",
             "Tag": "Default",
             "Static": 0,
@@ -7277,8 +7277,8 @@
             ]
         },
         {
-            "UID": 1001857585,
-            "ParentUID": 2126765249,
+            "UID": 2910216957,
+            "ParentUID": 243473597,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint20_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7356,8 +7356,8 @@
             ]
         },
         {
-            "UID": 384549,
-            "ParentUID": 1001857585,
+            "UID": 278369163,
+            "ParentUID": 2910216957,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint20_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -7435,8 +7435,8 @@
             ]
         },
         {
-            "UID": 663272202,
-            "ParentUID": 384549,
+            "UID": 3395924373,
+            "ParentUID": 278369163,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint20_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -7514,8 +7514,8 @@
             ]
         },
         {
-            "UID": 2083546428,
-            "ParentUID": 663272202,
+            "UID": 3918125768,
+            "ParentUID": 3395924373,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint20",
             "Tag": "Default",
             "Static": 0,
@@ -7593,8 +7593,8 @@
             ]
         },
         {
-            "UID": 498185041,
-            "ParentUID": 115177170,
+            "UID": 1799513991,
+            "ParentUID": 3556385679,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint9_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7672,8 +7672,8 @@
             ]
         },
         {
-            "UID": 2974922352,
-            "ParentUID": 498185041,
+            "UID": 1969455781,
+            "ParentUID": 1799513991,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint9_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -7751,8 +7751,8 @@
             ]
         },
         {
-            "UID": 3619039653,
-            "ParentUID": 2974922352,
+            "UID": 1719240687,
+            "ParentUID": 1969455781,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint9_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -7830,8 +7830,8 @@
             ]
         },
         {
-            "UID": 2594718039,
-            "ParentUID": 3619039653,
+            "UID": 1589644896,
+            "ParentUID": 1719240687,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint9",
             "Tag": "Default",
             "Static": 0,
@@ -7909,8 +7909,8 @@
             ]
         },
         {
-            "UID": 1400679939,
-            "ParentUID": 2594718039,
+            "UID": 1429388974,
+            "ParentUID": 1589644896,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint10_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -7988,8 +7988,8 @@
             ]
         },
         {
-            "UID": 2212157292,
-            "ParentUID": 1400679939,
+            "UID": 1697065516,
+            "ParentUID": 1429388974,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint10_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8067,8 +8067,8 @@
             ]
         },
         {
-            "UID": 1990388202,
-            "ParentUID": 2212157292,
+            "UID": 995681184,
+            "ParentUID": 1697065516,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint10_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -8146,8 +8146,8 @@
             ]
         },
         {
-            "UID": 2831241952,
-            "ParentUID": 1990388202,
+            "UID": 198642713,
+            "ParentUID": 995681184,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint10",
             "Tag": "Default",
             "Static": 0,
@@ -8225,8 +8225,8 @@
             ]
         },
         {
-            "UID": 126649019,
-            "ParentUID": 2831241952,
+            "UID": 3419774281,
+            "ParentUID": 198642713,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint11_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -8304,8 +8304,8 @@
             ]
         },
         {
-            "UID": 1106171400,
-            "ParentUID": 126649019,
+            "UID": 3716837275,
+            "ParentUID": 3419774281,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint11_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8383,8 +8383,8 @@
             ]
         },
         {
-            "UID": 1443585891,
-            "ParentUID": 1106171400,
+            "UID": 1135733523,
+            "ParentUID": 3716837275,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint11_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -8462,8 +8462,8 @@
             ]
         },
         {
-            "UID": 141268673,
-            "ParentUID": 1443585891,
+            "UID": 3956987776,
+            "ParentUID": 1135733523,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint11",
             "Tag": "Default",
             "Static": 0,
@@ -8541,8 +8541,8 @@
             ]
         },
         {
-            "UID": 4171120896,
-            "ParentUID": 141268673,
+            "UID": 3049265703,
+            "ParentUID": 3956987776,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint13_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -8620,8 +8620,8 @@
             ]
         },
         {
-            "UID": 3434356112,
-            "ParentUID": 4171120896,
+            "UID": 3057533290,
+            "ParentUID": 3049265703,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint13_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -8699,8 +8699,8 @@
             ]
         },
         {
-            "UID": 3132205289,
-            "ParentUID": 3434356112,
+            "UID": 587733921,
+            "ParentUID": 3057533290,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint13_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -8778,8 +8778,8 @@
             ]
         },
         {
-            "UID": 2625078641,
-            "ParentUID": 3132205289,
+            "UID": 1802884147,
+            "ParentUID": 587733921,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint13",
             "Tag": "Default",
             "Static": 0,
@@ -8857,8 +8857,8 @@
             ]
         },
         {
-            "UID": 2196317475,
-            "ParentUID": 2625078641,
+            "UID": 2955356931,
+            "ParentUID": 1802884147,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint15_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -8936,8 +8936,8 @@
             ]
         },
         {
-            "UID": 709558023,
-            "ParentUID": 2196317475,
+            "UID": 2139464529,
+            "ParentUID": 2955356931,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint15_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9015,8 +9015,8 @@
             ]
         },
         {
-            "UID": 1120524020,
-            "ParentUID": 709558023,
+            "UID": 2381325255,
+            "ParentUID": 2139464529,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint15_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -9094,8 +9094,8 @@
             ]
         },
         {
-            "UID": 393305162,
-            "ParentUID": 1120524020,
+            "UID": 2656716014,
+            "ParentUID": 2381325255,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint15",
             "Tag": "Default",
             "Static": 0,
@@ -9173,8 +9173,8 @@
             ]
         },
         {
-            "UID": 2303636489,
-            "ParentUID": 141268673,
+            "UID": 2667782648,
+            "ParentUID": 3956987776,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint12_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9252,8 +9252,8 @@
             ]
         },
         {
-            "UID": 1018989793,
-            "ParentUID": 2303636489,
+            "UID": 2577735012,
+            "ParentUID": 2667782648,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint12_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9331,8 +9331,8 @@
             ]
         },
         {
-            "UID": 3184171860,
-            "ParentUID": 1018989793,
+            "UID": 3290392392,
+            "ParentUID": 2577735012,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint12_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -9410,8 +9410,8 @@
             ]
         },
         {
-            "UID": 1364639736,
-            "ParentUID": 3184171860,
+            "UID": 990085080,
+            "ParentUID": 3290392392,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint12",
             "Tag": "Default",
             "Static": 0,
@@ -9489,8 +9489,8 @@
             ]
         },
         {
-            "UID": 2082477727,
-            "ParentUID": 1364639736,
+            "UID": 3684241167,
+            "ParentUID": 990085080,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint14_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9568,8 +9568,8 @@
             ]
         },
         {
-            "UID": 1521763591,
-            "ParentUID": 2082477727,
+            "UID": 1489412496,
+            "ParentUID": 3684241167,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint14_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9647,8 +9647,8 @@
             ]
         },
         {
-            "UID": 1304299151,
-            "ParentUID": 1521763591,
+            "UID": 2429097721,
+            "ParentUID": 1489412496,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint14_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -9726,8 +9726,8 @@
             ]
         },
         {
-            "UID": 1257815614,
-            "ParentUID": 1304299151,
+            "UID": 459477864,
+            "ParentUID": 2429097721,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint14",
             "Tag": "Default",
             "Static": 0,
@@ -9805,8 +9805,8 @@
             ]
         },
         {
-            "UID": 2110656247,
-            "ParentUID": 115177170,
+            "UID": 3680233969,
+            "ParentUID": 3556385679,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint4_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -9884,8 +9884,8 @@
             ]
         },
         {
-            "UID": 749863672,
-            "ParentUID": 2110656247,
+            "UID": 201446527,
+            "ParentUID": 3680233969,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint4_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -9963,8 +9963,8 @@
             ]
         },
         {
-            "UID": 2918946794,
-            "ParentUID": 749863672,
+            "UID": 1159670537,
+            "ParentUID": 201446527,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint4_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -10042,8 +10042,8 @@
             ]
         },
         {
-            "UID": 3798880845,
-            "ParentUID": 2918946794,
+            "UID": 2560877946,
+            "ParentUID": 1159670537,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint4",
             "Tag": "Default",
             "Static": 0,
@@ -10121,8 +10121,8 @@
             ]
         },
         {
-            "UID": 3794042292,
-            "ParentUID": 3798880845,
+            "UID": 935692417,
+            "ParentUID": 2560877946,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint27_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10200,8 +10200,8 @@
             ]
         },
         {
-            "UID": 3679149307,
-            "ParentUID": 3794042292,
+            "UID": 66170846,
+            "ParentUID": 935692417,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint27_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -10279,8 +10279,8 @@
             ]
         },
         {
-            "UID": 2496829017,
-            "ParentUID": 3679149307,
+            "UID": 3562642443,
+            "ParentUID": 66170846,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint27_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -10358,8 +10358,8 @@
             ]
         },
         {
-            "UID": 3628527247,
-            "ParentUID": 2496829017,
+            "UID": 1598662249,
+            "ParentUID": 3562642443,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint27",
             "Tag": "Default",
             "Static": 0,
@@ -10437,8 +10437,8 @@
             ]
         },
         {
-            "UID": 1197658731,
-            "ParentUID": 3628527247,
+            "UID": 3932514175,
+            "ParentUID": 1598662249,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint28_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10516,8 +10516,8 @@
             ]
         },
         {
-            "UID": 1710761179,
-            "ParentUID": 1197658731,
+            "UID": 127715642,
+            "ParentUID": 3932514175,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint28_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -10595,8 +10595,8 @@
             ]
         },
         {
-            "UID": 2525680414,
-            "ParentUID": 1710761179,
+            "UID": 2328566052,
+            "ParentUID": 127715642,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint28_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -10674,8 +10674,8 @@
             ]
         },
         {
-            "UID": 2665346594,
-            "ParentUID": 2525680414,
+            "UID": 2028891748,
+            "ParentUID": 2328566052,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint28",
             "Tag": "Default",
             "Static": 0,
@@ -10753,8 +10753,8 @@
             ]
         },
         {
-            "UID": 3082644660,
-            "ParentUID": 2665346594,
+            "UID": 4152394196,
+            "ParentUID": 2028891748,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint29_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -10832,8 +10832,8 @@
             ]
         },
         {
-            "UID": 4094745779,
-            "ParentUID": 3082644660,
+            "UID": 346716953,
+            "ParentUID": 4152394196,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint29_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -10911,8 +10911,8 @@
             ]
         },
         {
-            "UID": 1821384874,
-            "ParentUID": 4094745779,
+            "UID": 1388034404,
+            "ParentUID": 346716953,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint29_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -10990,8 +10990,8 @@
             ]
         },
         {
-            "UID": 836103366,
-            "ParentUID": 1821384874,
+            "UID": 2092980190,
+            "ParentUID": 1388034404,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint29",
             "Tag": "Default",
             "Static": 0,
@@ -11069,8 +11069,8 @@
             ]
         },
         {
-            "UID": 2741370966,
-            "ParentUID": 836103366,
+            "UID": 2960855642,
+            "ParentUID": 2092980190,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint30_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -11148,8 +11148,8 @@
             ]
         },
         {
-            "UID": 2496360297,
-            "ParentUID": 2741370966,
+            "UID": 2122235737,
+            "ParentUID": 2960855642,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint30_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -11227,8 +11227,8 @@
             ]
         },
         {
-            "UID": 3409443518,
-            "ParentUID": 2496360297,
+            "UID": 2105391435,
+            "ParentUID": 2122235737,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint30_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -11306,8 +11306,8 @@
             ]
         },
         {
-            "UID": 2355183808,
-            "ParentUID": 3409443518,
+            "UID": 2524512615,
+            "ParentUID": 2105391435,
             "Name": "Maya_Boss_23:Maya_Boss_13:joint30",
             "Tag": "Default",
             "Static": 0,
@@ -11385,8 +11385,8 @@
             ]
         },
         {
-            "UID": 3133831693,
-            "ParentUID": 182164953,
+            "UID": 1151740281,
+            "ParentUID": 2943835501,
             "Name": "Maya_Boss_23:Maya_Boss_13:Neta_Boss",
             "Tag": "Default",
             "Static": 0,
@@ -11464,8 +11464,8 @@
             ]
         },
         {
-            "UID": 981411483,
-            "ParentUID": 182164953,
+            "UID": 3436589983,
+            "ParentUID": 2943835501,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

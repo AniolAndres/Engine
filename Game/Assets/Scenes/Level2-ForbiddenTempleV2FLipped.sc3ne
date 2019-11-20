@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1496491099,
+            "UID": 4186414189,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 1360332540,
-            "ParentUID": 1496491099,
+            "UID": 1101110339,
+            "ParentUID": 4186414189,
             "Name": "ThroneHole_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 101422033,
-            "ParentUID": 1360332540,
+            "UID": 2928266621,
+            "ParentUID": 1101110339,
             "Name": "ThroneHole_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 1494158099,
-            "ParentUID": 101422033,
+            "UID": 3916704264,
+            "ParentUID": 2928266621,
             "Name": "ThroneHole_$AssimpFbx$_Scaling",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 2341723146,
-            "ParentUID": 1494158099,
+            "UID": 1673744002,
+            "ParentUID": 3916704264,
             "Name": "ThroneHole_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 818279080,
-            "ParentUID": 2341723146,
+            "UID": 245275512,
+            "ParentUID": 1673744002,
             "Name": "ThroneHole",
             "Tag": "Default",
             "Static": 0,
@@ -478,8 +478,8 @@
             ]
         },
         {
-            "UID": 1274405908,
-            "ParentUID": 1496491099,
+            "UID": 2969209634,
+            "ParentUID": 4186414189,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -614,8 +614,8 @@
             ]
         },
         {
-            "UID": 1678374593,
-            "ParentUID": 1496491099,
+            "UID": 1581968955,
+            "ParentUID": 4186414189,
             "Name": "0_Floor_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -693,8 +693,8 @@
             ]
         },
         {
-            "UID": 825623276,
-            "ParentUID": 1678374593,
+            "UID": 3261480072,
+            "ParentUID": 1581968955,
             "Name": "0_Floor_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -772,8 +772,8 @@
             ]
         },
         {
-            "UID": 289536283,
-            "ParentUID": 825623276,
+            "UID": 2780504092,
+            "ParentUID": 3261480072,
             "Name": "0_Floor_$AssimpFbx$_Scaling",
             "Tag": "Default",
             "Static": 0,
@@ -851,8 +851,8 @@
             ]
         },
         {
-            "UID": 2172911760,
-            "ParentUID": 289536283,
+            "UID": 2098630012,
+            "ParentUID": 2780504092,
             "Name": "0_Floor",
             "Tag": "Default",
             "Static": 0,
@@ -930,8 +930,8 @@
             ]
         },
         {
-            "UID": 2498505974,
-            "ParentUID": 1496491099,
+            "UID": 4173674335,
+            "ParentUID": 4186414189,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

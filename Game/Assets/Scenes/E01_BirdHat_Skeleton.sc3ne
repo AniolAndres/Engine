@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 976544937,
+            "UID": 1393026836,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 4182029882,
-            "ParentUID": 976544937,
+            "UID": 1216526630,
+            "ParentUID": 1393026836,
             "Name": "E01_BirdHat_Skeleton_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 776789847,
-            "ParentUID": 4182029882,
+            "UID": 2240459665,
+            "ParentUID": 1216526630,
             "Name": "E01_BirdHat_Skeleton",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 3702299503,
-            "ParentUID": 976544937,
+            "UID": 997088358,
+            "ParentUID": 1393026836,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

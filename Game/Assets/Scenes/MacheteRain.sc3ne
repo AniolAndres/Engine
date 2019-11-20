@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 100760702,
+            "UID": 1765731941,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 524846027,
-            "ParentUID": 100760702,
+            "UID": 2558711272,
+            "ParentUID": 1765731941,
             "Name": "Box001",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 2869140154,
-            "ParentUID": 100760702,
+            "UID": 2288947354,
+            "ParentUID": 1765731941,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

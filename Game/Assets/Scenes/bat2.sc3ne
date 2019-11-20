@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 4271148736,
+            "UID": 3800951717,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -88,8 +88,8 @@
             ]
         },
         {
-            "UID": 2565400134,
-            "ParentUID": 4271148736,
+            "UID": 2594659351,
+            "ParentUID": 3800951717,
             "Name": "Cube",
             "Tag": "Default",
             "Static": 0,
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "UID": 530178626,
-            "ParentUID": 4271148736,
+            "UID": 1031037143,
+            "ParentUID": 3800951717,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -303,8 +303,8 @@
             ]
         },
         {
-            "UID": 2526971068,
-            "ParentUID": 4271148736,
+            "UID": 88204120,
+            "ParentUID": 3800951717,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -439,8 +439,8 @@
             ]
         },
         {
-            "UID": 107768036,
-            "ParentUID": 4271148736,
+            "UID": 2810009235,
+            "ParentUID": 3800951717,
             "Name": "Armature",
             "Tag": "Default",
             "Static": 0,
@@ -518,8 +518,8 @@
             ]
         },
         {
-            "UID": 1914149508,
-            "ParentUID": 107768036,
+            "UID": 688128213,
+            "ParentUID": 2810009235,
             "Name": "Wing1.R",
             "Tag": "Default",
             "Static": 0,
@@ -597,8 +597,8 @@
             ]
         },
         {
-            "UID": 2790209563,
-            "ParentUID": 1914149508,
+            "UID": 3018459852,
+            "ParentUID": 688128213,
             "Name": "Wing2.R",
             "Tag": "Default",
             "Static": 0,
@@ -676,8 +676,8 @@
             ]
         },
         {
-            "UID": 1353551366,
-            "ParentUID": 2790209563,
+            "UID": 3479308534,
+            "ParentUID": 3018459852,
             "Name": "Wing3.R",
             "Tag": "Default",
             "Static": 0,
@@ -755,8 +755,8 @@
             ]
         },
         {
-            "UID": 2264999747,
-            "ParentUID": 1353551366,
+            "UID": 3572980848,
+            "ParentUID": 3479308534,
             "Name": "Wing3.R_end",
             "Tag": "Default",
             "Static": 0,
@@ -834,8 +834,8 @@
             ]
         },
         {
-            "UID": 2339942294,
-            "ParentUID": 107768036,
+            "UID": 919940944,
+            "ParentUID": 2810009235,
             "Name": "Wing1.L",
             "Tag": "Default",
             "Static": 0,
@@ -913,8 +913,8 @@
             ]
         },
         {
-            "UID": 3068556992,
-            "ParentUID": 2339942294,
+            "UID": 3012599779,
+            "ParentUID": 919940944,
             "Name": "Wing2.L",
             "Tag": "Default",
             "Static": 0,
@@ -992,8 +992,8 @@
             ]
         },
         {
-            "UID": 4057746267,
-            "ParentUID": 3068556992,
+            "UID": 1214418839,
+            "ParentUID": 3012599779,
             "Name": "Wing3.L",
             "Tag": "Default",
             "Static": 0,
@@ -1071,8 +1071,8 @@
             ]
         },
         {
-            "UID": 341284427,
-            "ParentUID": 4057746267,
+            "UID": 3708376058,
+            "ParentUID": 1214418839,
             "Name": "Wing3.L_end",
             "Tag": "Default",
             "Static": 0,
@@ -1150,8 +1150,8 @@
             ]
         },
         {
-            "UID": 1817880397,
-            "ParentUID": 107768036,
+            "UID": 1063994154,
+            "ParentUID": 2810009235,
             "Name": "Spine",
             "Tag": "Default",
             "Static": 0,
@@ -1229,8 +1229,8 @@
             ]
         },
         {
-            "UID": 1742461044,
-            "ParentUID": 1817880397,
+            "UID": 681432007,
+            "ParentUID": 1063994154,
             "Name": "Spine_end",
             "Tag": "Default",
             "Static": 0,

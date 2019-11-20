@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058020,
-        "GUID": 4203320058,
+        "timeCreated": 1574266895,
+        "GUID": 1226905565,
         "Name": "TempleStairsSecond",
         "File": "Assets/Scenes/TempleStairsSecond.sc3ne",
-        "ExportedFile": "Library/Scenes/4203320058.sc3ne"
+        "ExportedFile": "Library/Scenes/1226905565.sc3ne"
     }
 }

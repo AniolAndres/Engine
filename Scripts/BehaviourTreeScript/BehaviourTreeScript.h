@@ -24,3 +24,5 @@ class BehaviourTreeScript_API BehaviourTreeScript : public Script
 extern "C" BehaviourTreeScript_API Script* CreateScript();
 
 #endif __BehaviourTreeScript_h__
+
+// I need a resource and at the start I'll take it and create all the nodes and stuff

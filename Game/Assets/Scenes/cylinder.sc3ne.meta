@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058016,
-        "GUID": 3732372822,
+        "timeCreated": 1574266890,
+        "GUID": 1686596,
         "Name": "cylinder",
         "File": "Assets/Scenes/cylinder.sc3ne",
-        "ExportedFile": "Library/Scenes/3732372822.sc3ne"
+        "ExportedFile": "Library/Scenes/1686596.sc3ne"
     }
 }

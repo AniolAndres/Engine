@@ -25,6 +25,7 @@
 #include "PanelAnimation.h"
 #include "PanelNavigation.h"
 #include "PanelResourceManagerUnused.h"
+#include "PanelBehaviourTree.h"
 
 #include "MaterialEditor.h"
 #include "FileExplorer.h"
@@ -51,6 +52,7 @@ ModuleEditor::ModuleEditor()
 	panels.push_back(assets = new PanelBrowser());
 	panels.push_back(time = new PanelTime());
 	panels.push_back(states = new PanelState());
+	panels.push_back(behaviour = new PanelBehaviourTree());
 	panels.push_back(animation = new PanelAnimation());
 	panels.push_back(resource = new PanelResourceManager());
 	panels.push_back(navigation = new PanelNavigation());
@@ -269,13 +271,13 @@ update_status ModuleEditor::Update(float dt)
 // Called before quitting
 bool ModuleEditor::CleanUp()
 {
-	LOG("Destroying editor");
+LOG("Destroying editor");
 
-	ImGui_ImplOpenGL3_Shutdown();
-	ImGui_ImplSDL2_Shutdown();
-	ImGui::DestroyContext();
+ImGui_ImplOpenGL3_Shutdown();
+ImGui_ImplSDL2_Shutdown();
+ImGui::DestroyContext();
 
-	return true;
+return true;
 }
 
 void ModuleEditor::RenderGUI() const
@@ -367,6 +369,10 @@ void ModuleEditor::WindowsMenu()
 		if (ImGui::MenuItem("Navigation", nullptr, navigation->IsEnabled()))
 		{
 			navigation->ToggleEnabled();
+		}
+		if (ImGui::MenuItem("Behaviour", nullptr, behaviour->IsEnabled()))
+		{
+			behaviour->ToggleEnabled();
 		}
 		ImGui::EndMenu();
 	}

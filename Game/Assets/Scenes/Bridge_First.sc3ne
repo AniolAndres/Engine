@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1287280334,
+            "UID": 530385424,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 3597737747,
-            "ParentUID": 1287280334,
+            "UID": 501833943,
+            "ParentUID": 530385424,
             "Name": "E01_Bridge001_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 783912817,
-            "ParentUID": 3597737747,
+            "UID": 2799302686,
+            "ParentUID": 501833943,
             "Name": "E01_Bridge001_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 2132463754,
-            "ParentUID": 783912817,
+            "UID": 1735066822,
+            "ParentUID": 2799302686,
             "Name": "E01_Bridge001_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 628227278,
-            "ParentUID": 2132463754,
+            "UID": 2641013177,
+            "ParentUID": 1735066822,
             "Name": "E01_Bridge001",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 166252964,
-            "ParentUID": 1287280334,
+            "UID": 1061603201,
+            "ParentUID": 530385424,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 377564904,
+            "UID": 19564741,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2638807249,
-            "ParentUID": 377564904,
+            "UID": 184872066,
+            "ParentUID": 19564741,
             "Name": "W01_bullet_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 2214734171,
-            "ParentUID": 2638807249,
+            "UID": 3329810355,
+            "ParentUID": 184872066,
             "Name": "W01_bullet",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 866647024,
-            "ParentUID": 377564904,
+            "UID": 2448662048,
+            "ParentUID": 19564741,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

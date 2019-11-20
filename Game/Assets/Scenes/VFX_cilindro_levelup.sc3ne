@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1578300382,
+            "UID": 2921526081,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 3763428370,
-            "ParentUID": 1578300382,
+            "UID": 414704276,
+            "ParentUID": 2921526081,
             "Name": "CilindroVFX_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 2513531996,
-            "ParentUID": 3763428370,
+            "UID": 794326564,
+            "ParentUID": 414704276,
             "Name": "CilindroVFX_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 868371911,
-            "ParentUID": 2513531996,
+            "UID": 1879055738,
+            "ParentUID": 794326564,
             "Name": "CilindroVFX",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 953864481,
-            "ParentUID": 1578300382,
+            "UID": 1255678584,
+            "ParentUID": 2921526081,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

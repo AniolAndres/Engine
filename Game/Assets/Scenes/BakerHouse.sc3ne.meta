@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058023,
-        "GUID": 2972987632,
+        "timeCreated": 1574266898,
+        "GUID": 1562246974,
         "Name": "BakerHouse",
         "File": "Assets/Scenes/BakerHouse.sc3ne",
-        "ExportedFile": "Library/Scenes/2972987632.sc3ne"
+        "ExportedFile": "Library/Scenes/1562246974.sc3ne"
     }
 }

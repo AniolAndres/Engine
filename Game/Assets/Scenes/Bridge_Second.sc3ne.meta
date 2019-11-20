@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058023,
-        "GUID": 1205275621,
+        "timeCreated": 1574266897,
+        "GUID": 210273123,
         "Name": "Bridge_Second",
         "File": "Assets/Scenes/Bridge_Second.sc3ne",
-        "ExportedFile": "Library/Scenes/1205275621.sc3ne"
+        "ExportedFile": "Library/Scenes/210273123.sc3ne"
     }
 }

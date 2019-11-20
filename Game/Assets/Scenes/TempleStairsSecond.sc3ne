@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 3267347562,
+            "UID": 2436229707,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 1615230799,
-            "ParentUID": 3267347562,
+            "UID": 2802870385,
+            "ParentUID": 2436229707,
             "Name": "Lvl2_Stairs_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 1999954179,
-            "ParentUID": 1615230799,
+            "UID": 3780276154,
+            "ParentUID": 2802870385,
             "Name": "Lvl2_Stairs_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 3906039970,
-            "ParentUID": 1999954179,
+            "UID": 2268803581,
+            "ParentUID": 3780276154,
             "Name": "Lvl2_Stairs_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 1135458455,
-            "ParentUID": 3906039970,
+            "UID": 203958345,
+            "ParentUID": 2268803581,
             "Name": "Lvl2_Stairs",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 463745284,
-            "ParentUID": 3267347562,
+            "UID": 324899816,
+            "ParentUID": 2436229707,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

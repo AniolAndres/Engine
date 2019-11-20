@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 3718544880,
+            "UID": 1046914517,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2917337210,
-            "ParentUID": 3718544880,
+            "UID": 2040814187,
+            "ParentUID": 1046914517,
             "Name": "Lvl2_Boss_Throne_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 1606775834,
-            "ParentUID": 2917337210,
+            "UID": 2650744449,
+            "ParentUID": 2040814187,
             "Name": "Lvl2_Boss_Throne_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 1338916304,
-            "ParentUID": 1606775834,
+            "UID": 3503070721,
+            "ParentUID": 2650744449,
             "Name": "Lvl2_Boss_Throne_$AssimpFbx$_GeometricTranslation",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 3668580539,
-            "ParentUID": 1338916304,
+            "UID": 665026176,
+            "ParentUID": 3503070721,
             "Name": "Lvl2_Boss_Throne",
             "Tag": "Default",
             "Static": 0,
@@ -399,8 +399,8 @@
             ]
         },
         {
-            "UID": 1220827325,
-            "ParentUID": 3718544880,
+            "UID": 4017409038,
+            "ParentUID": 1046914517,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

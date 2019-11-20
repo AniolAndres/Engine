@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058023,
-        "GUID": 1831235665,
+        "timeCreated": 1574266897,
+        "GUID": 4045466819,
         "Name": "SpiralMesh",
         "File": "Assets/Scenes/SpiralMesh.sc3ne",
-        "ExportedFile": "Library/Scenes/1831235665.sc3ne"
+        "ExportedFile": "Library/Scenes/4045466819.sc3ne"
     }
 }

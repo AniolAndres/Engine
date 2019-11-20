@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1794065727,
+            "UID": 184150513,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 567560501,
-            "ParentUID": 1794065727,
+            "UID": 2433407920,
+            "ParentUID": 184150513,
             "Name": "E01_BushHero_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 110431709,
-            "ParentUID": 567560501,
+            "UID": 1748065355,
+            "ParentUID": 2433407920,
             "Name": "E01_BushHero_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 624937723,
-            "ParentUID": 110431709,
+            "UID": 3698978039,
+            "ParentUID": 1748065355,
             "Name": "E01_BushHero",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 3108012987,
-            "ParentUID": 1794065727,
+            "UID": 1871279911,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -456,8 +456,8 @@
             ]
         },
         {
-            "UID": 2516066970,
-            "ParentUID": 1794065727,
+            "UID": 2029224915,
+            "ParentUID": 184150513,
             "Name": "E01_StatueBardo_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -535,8 +535,8 @@
             ]
         },
         {
-            "UID": 2039620275,
-            "ParentUID": 2516066970,
+            "UID": 1562734512,
+            "ParentUID": 2029224915,
             "Name": "E01_StatueBardo_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -614,8 +614,8 @@
             ]
         },
         {
-            "UID": 3337196957,
-            "ParentUID": 2039620275,
+            "UID": 2347222302,
+            "ParentUID": 1562734512,
             "Name": "E01_StatueBardo",
             "Tag": "Default",
             "Static": 0,
@@ -693,8 +693,8 @@
             ]
         },
         {
-            "UID": 3508212772,
-            "ParentUID": 1794065727,
+            "UID": 3753858997,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -829,8 +829,8 @@
             ]
         },
         {
-            "UID": 3665461522,
-            "ParentUID": 1794065727,
+            "UID": 3444213620,
+            "ParentUID": 184150513,
             "Name": "E01_StatueHechicera_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -908,8 +908,8 @@
             ]
         },
         {
-            "UID": 1472347205,
-            "ParentUID": 3665461522,
+            "UID": 745969138,
+            "ParentUID": 3444213620,
             "Name": "E01_StatueHechicera_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -987,8 +987,8 @@
             ]
         },
         {
-            "UID": 2860903283,
-            "ParentUID": 1472347205,
+            "UID": 431338000,
+            "ParentUID": 745969138,
             "Name": "E01_StatueHechicera",
             "Tag": "Default",
             "Static": 0,
@@ -1066,8 +1066,8 @@
             ]
         },
         {
-            "UID": 1315703866,
-            "ParentUID": 1794065727,
+            "UID": 3665028594,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1202,8 +1202,8 @@
             ]
         },
         {
-            "UID": 1310607777,
-            "ParentUID": 1794065727,
+            "UID": 2150004072,
+            "ParentUID": 184150513,
             "Name": "0_Floor_1_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1281,8 +1281,8 @@
             ]
         },
         {
-            "UID": 3549035307,
-            "ParentUID": 1310607777,
+            "UID": 3563540609,
+            "ParentUID": 2150004072,
             "Name": "0_Floor_1_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1360,8 +1360,8 @@
             ]
         },
         {
-            "UID": 720524440,
-            "ParentUID": 3549035307,
+            "UID": 2628213766,
+            "ParentUID": 3563540609,
             "Name": "0_Floor_1",
             "Tag": "Default",
             "Static": 0,
@@ -1439,8 +1439,8 @@
             ]
         },
         {
-            "UID": 2833767256,
-            "ParentUID": 1794065727,
+            "UID": 3445472513,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1575,8 +1575,8 @@
             ]
         },
         {
-            "UID": 965618936,
-            "ParentUID": 1794065727,
+            "UID": 2552899773,
+            "ParentUID": 184150513,
             "Name": "E01_BigJacarandaTree_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1654,8 +1654,8 @@
             ]
         },
         {
-            "UID": 1694600020,
-            "ParentUID": 965618936,
+            "UID": 763990046,
+            "ParentUID": 2552899773,
             "Name": "E01_BigJacarandaTree_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -1733,8 +1733,8 @@
             ]
         },
         {
-            "UID": 2044984516,
-            "ParentUID": 1694600020,
+            "UID": 2026757402,
+            "ParentUID": 763990046,
             "Name": "E01_BigJacarandaTree",
             "Tag": "Default",
             "Static": 0,
@@ -1812,8 +1812,8 @@
             ]
         },
         {
-            "UID": 1137047777,
-            "ParentUID": 1794065727,
+            "UID": 3101004774,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1948,8 +1948,8 @@
             ]
         },
         {
-            "UID": 4171423490,
-            "ParentUID": 1794065727,
+            "UID": 2595426333,
+            "ParentUID": 184150513,
             "Name": "E01_ThinJacarandaTree_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2027,8 +2027,8 @@
             ]
         },
         {
-            "UID": 2840194169,
-            "ParentUID": 4171423490,
+            "UID": 1758207470,
+            "ParentUID": 2595426333,
             "Name": "E01_ThinJacarandaTree_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2106,8 +2106,8 @@
             ]
         },
         {
-            "UID": 3672826287,
-            "ParentUID": 2840194169,
+            "UID": 1390868517,
+            "ParentUID": 1758207470,
             "Name": "E01_ThinJacarandaTree",
             "Tag": "Default",
             "Static": 0,
@@ -2185,8 +2185,8 @@
             ]
         },
         {
-            "UID": 793646283,
-            "ParentUID": 1794065727,
+            "UID": 2337808710,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -2321,8 +2321,8 @@
             ]
         },
         {
-            "UID": 1306160420,
-            "ParentUID": 1794065727,
+            "UID": 272708714,
+            "ParentUID": 184150513,
             "Name": "E01_Tree_no_leafs_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -2400,8 +2400,8 @@
             ]
         },
         {
-            "UID": 2547676519,
-            "ParentUID": 1306160420,
+            "UID": 2298991934,
+            "ParentUID": 272708714,
             "Name": "E01_Tree_no_leafs_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -2479,8 +2479,8 @@
             ]
         },
         {
-            "UID": 1567755637,
-            "ParentUID": 2547676519,
+            "UID": 14198888,
+            "ParentUID": 2298991934,
             "Name": "E01_Tree_no_leafs",
             "Tag": "Default",
             "Static": 0,
@@ -2558,8 +2558,8 @@
             ]
         },
         {
-            "UID": 197895499,
-            "ParentUID": 1794065727,
+            "UID": 3914056455,
+            "ParentUID": 184150513,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

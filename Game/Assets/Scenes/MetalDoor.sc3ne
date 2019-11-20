@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 729845177,
+            "UID": 2075041240,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -88,8 +88,8 @@
             ]
         },
         {
-            "UID": 966328270,
-            "ParentUID": 729845177,
+            "UID": 3646750440,
+            "ParentUID": 2075041240,
             "Name": "joint1_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -167,8 +167,8 @@
             ]
         },
         {
-            "UID": 1035663235,
-            "ParentUID": 966328270,
+            "UID": 888287637,
+            "ParentUID": 3646750440,
             "Name": "joint1_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -246,8 +246,8 @@
             ]
         },
         {
-            "UID": 3579688416,
-            "ParentUID": 1035663235,
+            "UID": 4285791010,
+            "ParentUID": 888287637,
             "Name": "joint1_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -325,8 +325,8 @@
             ]
         },
         {
-            "UID": 2689082194,
-            "ParentUID": 3579688416,
+            "UID": 3861410791,
+            "ParentUID": 4285791010,
             "Name": "joint1",
             "Tag": "Default",
             "Static": 0,
@@ -404,8 +404,8 @@
             ]
         },
         {
-            "UID": 3334071375,
-            "ParentUID": 2689082194,
+            "UID": 2278359544,
+            "ParentUID": 3861410791,
             "Name": "joint2_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -483,8 +483,8 @@
             ]
         },
         {
-            "UID": 3214807982,
-            "ParentUID": 3334071375,
+            "UID": 3474085104,
+            "ParentUID": 2278359544,
             "Name": "joint2_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -562,8 +562,8 @@
             ]
         },
         {
-            "UID": 1653798038,
-            "ParentUID": 3214807982,
+            "UID": 1196271148,
+            "ParentUID": 3474085104,
             "Name": "joint2_$AssimpFbx$_Rotation",
             "Tag": "Default",
             "Static": 0,
@@ -641,8 +641,8 @@
             ]
         },
         {
-            "UID": 2368689068,
-            "ParentUID": 1653798038,
+            "UID": 1398040988,
+            "ParentUID": 1196271148,
             "Name": "joint2",
             "Tag": "Default",
             "Static": 0,
@@ -720,8 +720,8 @@
             ]
         },
         {
-            "UID": 783036571,
-            "ParentUID": 729845177,
+            "UID": 3290463086,
+            "ParentUID": 2075041240,
             "Name": "E01_valla1_metalPuerta1_$AssimpFbx$_RotationPivot",
             "Tag": "Default",
             "Static": 0,
@@ -799,8 +799,8 @@
             ]
         },
         {
-            "UID": 588715756,
-            "ParentUID": 783036571,
+            "UID": 2648365895,
+            "ParentUID": 3290463086,
             "Name": "E01_valla1_metalPuerta1_$AssimpFbx$_RotationPivotInverse",
             "Tag": "Default",
             "Static": 0,
@@ -878,8 +878,8 @@
             ]
         },
         {
-            "UID": 317937535,
-            "ParentUID": 588715756,
+            "UID": 2487004304,
+            "ParentUID": 2648365895,
             "Name": "E01_valla1_metalPuerta1_$AssimpFbx$_ScalingPivot",
             "Tag": "Default",
             "Static": 0,
@@ -957,8 +957,8 @@
             ]
         },
         {
-            "UID": 11567111,
-            "ParentUID": 317937535,
+            "UID": 2000523210,
+            "ParentUID": 2487004304,
             "Name": "E01_valla1_metalPuerta1_$AssimpFbx$_ScalingPivotInverse",
             "Tag": "Default",
             "Static": 0,
@@ -1036,8 +1036,8 @@
             ]
         },
         {
-            "UID": 3527234488,
-            "ParentUID": 11567111,
+            "UID": 1386264776,
+            "ParentUID": 2000523210,
             "Name": "E01_valla1_metalPuerta1",
             "Tag": "Default",
             "Static": 0,
@@ -1115,8 +1115,8 @@
             ]
         },
         {
-            "UID": 219314148,
-            "ParentUID": 729845177,
+            "UID": 3125425777,
+            "ParentUID": 2075041240,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -1251,8 +1251,8 @@
             ]
         },
         {
-            "UID": 881276344,
-            "ParentUID": 729845177,
+            "UID": 4150986162,
+            "ParentUID": 2075041240,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -1330,8 +1330,8 @@
             ]
         },
         {
-            "UID": 2756689854,
-            "ParentUID": 881276344,
+            "UID": 491156644,
+            "ParentUID": 4150986162,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_RotationPivot",
             "Tag": "Default",
             "Static": 0,
@@ -1409,8 +1409,8 @@
             ]
         },
         {
-            "UID": 3427461928,
-            "ParentUID": 2756689854,
+            "UID": 3139967514,
+            "ParentUID": 491156644,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_RotationPivotInverse",
             "Tag": "Default",
             "Static": 0,
@@ -1488,8 +1488,8 @@
             ]
         },
         {
-            "UID": 3228643704,
-            "ParentUID": 3427461928,
+            "UID": 240838007,
+            "ParentUID": 3139967514,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_ScalingPivot",
             "Tag": "Default",
             "Static": 0,
@@ -1567,8 +1567,8 @@
             ]
         },
         {
-            "UID": 1946017961,
-            "ParentUID": 3228643704,
+            "UID": 3419781889,
+            "ParentUID": 240838007,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_ScalingPivotInverse",
             "Tag": "Default",
             "Static": 0,
@@ -1646,8 +1646,8 @@
             ]
         },
         {
-            "UID": 4062197669,
-            "ParentUID": 1946017961,
+            "UID": 1292648318,
+            "ParentUID": 3419781889,
             "Name": "E01_valla1_metalPuerta",
             "Tag": "Default",
             "Static": 0,
@@ -1725,8 +1725,8 @@
             ]
         },
         {
-            "UID": 1504835182,
-            "ParentUID": 729845177,
+            "UID": 1628978689,
+            "ParentUID": 2075041240,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 2344172344,
+            "UID": 2283858078,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 714706993,
-            "ParentUID": 2344172344,
+            "UID": 3113404253,
+            "ParentUID": 2283858078,
             "Name": "Vessel_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 1644571473,
-            "ParentUID": 714706993,
+            "UID": 993337013,
+            "ParentUID": 3113404253,
             "Name": "Vessel_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 821363785,
-            "ParentUID": 1644571473,
+            "UID": 2516210794,
+            "ParentUID": 993337013,
             "Name": "Vessel",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 3139591723,
-            "ParentUID": 2344172344,
+            "UID": 1772401108,
+            "ParentUID": 2283858078,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

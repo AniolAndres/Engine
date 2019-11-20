@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 309963483,
+            "UID": 1320779407,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 3270880373,
-            "ParentUID": 309963483,
+            "UID": 3351534715,
+            "ParentUID": 1320779407,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 1940500766,
-            "ParentUID": 3270880373,
+            "UID": 3376937137,
+            "ParentUID": 3351534715,
             "Name": "E01_valla1_metalPuerta_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 4105737364,
-            "ParentUID": 1940500766,
+            "UID": 1723702836,
+            "ParentUID": 3376937137,
             "Name": "E01_valla1_metalPuerta",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 2466381689,
-            "ParentUID": 309963483,
+            "UID": 2302291832,
+            "ParentUID": 1320779407,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

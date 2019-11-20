@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 658823860,
+            "UID": 1996845233,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 156475934,
-            "ParentUID": 658823860,
+            "UID": 2328231983,
+            "ParentUID": 1996845233,
             "Name": "Cylinder",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 1703766860,
-            "ParentUID": 658823860,
+            "UID": 3665595499,
+            "ParentUID": 1996845233,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

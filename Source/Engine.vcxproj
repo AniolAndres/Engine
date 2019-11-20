@@ -254,6 +254,7 @@
     <ClInclude Include="NodeEditor\Source\Interop.h" />
     <ClInclude Include="Panel.h" />
     <ClInclude Include="PanelAbout.h" />
+    <ClInclude Include="PanelBehaviourTree.h" />
     <ClInclude Include="PanelBrowser.h" />
     <ClInclude Include="PanelAnimation.h" />
     <ClInclude Include="PanelConfiguration.h" />
@@ -274,6 +275,7 @@
     <ClInclude Include="resource1.h" />
     <ClInclude Include="ResourceAnimation.h" />
     <ClInclude Include="ResourceAudio.h" />
+    <ClInclude Include="ResourceBehaviourTree.h" />
     <ClInclude Include="ResourceMaterial.h" />
     <ClInclude Include="ResourceMesh.h" />
     <ClInclude Include="ResourceModel.h" />
@@ -386,6 +388,7 @@
     <ClCompile Include="NodeEditor\Source\NodeEditor.cpp" />
     <ClCompile Include="PanelAbout.cpp" />
     <ClCompile Include="PanelAnimation.cpp" />
+    <ClCompile Include="PanelBehaviourTree.cpp" />
     <ClCompile Include="PanelBrowser.cpp" />
     <ClCompile Include="PanelConfiguration.cpp" />
     <ClCompile Include="PanelConsole.cpp" />
@@ -402,6 +405,7 @@
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="ResourceAnimation.cpp" />
     <ClCompile Include="ResourceAudio.cpp" />
+    <ClCompile Include="ResourceBehaviourTree.cpp" />
     <ClCompile Include="ResourceMaterial.cpp" />
     <ClCompile Include="ResourceMesh.cpp" />
     <ClCompile Include="ResourceModel.cpp" />

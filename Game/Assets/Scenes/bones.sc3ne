@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 83670663,
+            "UID": 872898019,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 694843939,
-            "ParentUID": 83670663,
+            "UID": 1843478862,
+            "ParentUID": 872898019,
             "Name": "bone3_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 321165751,
-            "ParentUID": 694843939,
+            "UID": 3562618437,
+            "ParentUID": 1843478862,
             "Name": "bone3",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 4069017791,
-            "ParentUID": 83670663,
+            "UID": 2062718916,
+            "ParentUID": 872898019,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -377,8 +377,8 @@
             ]
         },
         {
-            "UID": 1218441102,
-            "ParentUID": 83670663,
+            "UID": 59248094,
+            "ParentUID": 872898019,
             "Name": "bone2_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -456,8 +456,8 @@
             ]
         },
         {
-            "UID": 605923385,
-            "ParentUID": 1218441102,
+            "UID": 3260025648,
+            "ParentUID": 59248094,
             "Name": "bone2",
             "Tag": "Default",
             "Static": 0,
@@ -535,8 +535,8 @@
             ]
         },
         {
-            "UID": 4250755317,
-            "ParentUID": 83670663,
+            "UID": 3432660697,
+            "ParentUID": 872898019,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -671,8 +671,8 @@
             ]
         },
         {
-            "UID": 1398207379,
-            "ParentUID": 83670663,
+            "UID": 831860970,
+            "ParentUID": 872898019,
             "Name": "bone1_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -750,8 +750,8 @@
             ]
         },
         {
-            "UID": 2966756982,
-            "ParentUID": 1398207379,
+            "UID": 3811596450,
+            "ParentUID": 831860970,
             "Name": "bone1",
             "Tag": "Default",
             "Static": 0,
@@ -829,8 +829,8 @@
             ]
         },
         {
-            "UID": 1126854134,
-            "ParentUID": 83670663,
+            "UID": 82860731,
+            "ParentUID": 872898019,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

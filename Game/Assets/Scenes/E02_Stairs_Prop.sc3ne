@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 2071131479,
+            "UID": 3209946304,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 4240819769,
-            "ParentUID": 2071131479,
+            "UID": 25637332,
+            "ParentUID": 3209946304,
             "Name": "Box001_$AssimpFbx$_Translation",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 4213195837,
-            "ParentUID": 4240819769,
+            "UID": 3031826435,
+            "ParentUID": 25637332,
             "Name": "Box001_$AssimpFbx$_PreRotation",
             "Tag": "Default",
             "Static": 0,
@@ -241,8 +241,8 @@
             ]
         },
         {
-            "UID": 635626719,
-            "ParentUID": 4213195837,
+            "UID": 339598718,
+            "ParentUID": 3031826435,
             "Name": "Box001",
             "Tag": "Default",
             "Static": 0,
@@ -320,8 +320,8 @@
             ]
         },
         {
-            "UID": 996734038,
-            "ParentUID": 2071131479,
+            "UID": 1691813809,
+            "ParentUID": 3209946304,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

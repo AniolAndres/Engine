@@ -4,7 +4,7 @@
     },
     "GameObjects": [
         {
-            "UID": 1200253729,
+            "UID": 777856991,
             "ParentUID": 0,
             "Name": "Scene",
             "Tag": "Default",
@@ -83,8 +83,8 @@
             ]
         },
         {
-            "UID": 2033986832,
-            "ParentUID": 1200253729,
+            "UID": 2915150335,
+            "ParentUID": 777856991,
             "Name": "Baker_house",
             "Tag": "Default",
             "Static": 0,
@@ -162,8 +162,8 @@
             ]
         },
         {
-            "UID": 4039015848,
-            "ParentUID": 1200253729,
+            "UID": 3514899715,
+            "ParentUID": 777856991,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,
@@ -298,8 +298,8 @@
             ]
         },
         {
-            "UID": 2208863368,
-            "ParentUID": 1200253729,
+            "UID": 3704001609,
+            "ParentUID": 777856991,
             "Name": "Chimney",
             "Tag": "Default",
             "Static": 0,
@@ -377,8 +377,8 @@
             ]
         },
         {
-            "UID": 652911262,
-            "ParentUID": 1200253729,
+            "UID": 989538870,
+            "ParentUID": 777856991,
             "Name": "mesh",
             "Tag": "Default",
             "Static": 0,

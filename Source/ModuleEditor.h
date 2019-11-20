@@ -16,6 +16,7 @@ class PanelHierarchy;
 class PanelTime;
 class PanelResourceManager;
 class PanelState;
+class PanelBehaviourTree;
 class PanelAnimation;
 class PanelNavigation;
 class GameObject;
@@ -65,6 +66,7 @@ public:
 	PanelAnimation *animation = nullptr;
 	PanelNavigation* navigation = nullptr;
 	PanelResourceManagerUnused *resourceUnused = nullptr;
+	PanelBehaviourTree* behaviour = nullptr;
 
 	MaterialEditor *materialEditor = nullptr;
 	FileExplorer *fileExplorer = nullptr;

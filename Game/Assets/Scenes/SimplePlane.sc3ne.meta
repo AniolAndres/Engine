@@ -1,10 +1,10 @@
 {
     "Scene": {
         "metaVersion": 2,
-        "timeCreated": 1573058016,
-        "GUID": 1515172839,
+        "timeCreated": 1574266889,
+        "GUID": 1515755848,
         "Name": "SimplePlane",
         "File": "Assets/Scenes/SimplePlane.sc3ne",
-        "ExportedFile": "Library/Scenes/1515172839.sc3ne"
+        "ExportedFile": "Library/Scenes/1515755848.sc3ne"
     }
 }
