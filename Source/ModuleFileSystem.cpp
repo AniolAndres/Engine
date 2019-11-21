@@ -78,6 +78,8 @@ ModuleFileSystem::ModuleFileSystem()
 		MakeDirectory(IMPORTED_PREFABS);
 	if (!Exists(RESOURCE_SCENES))
 		MakeDirectory(RESOURCE_SCENES);
+	if (!Exists(BEHAVIOURTREES))
+		MakeDirectory(BEHAVIOURTREES);
 #endif
 
 	PHYSFS_mount(LIBRARY, nullptr, 1);

@@ -194,6 +194,7 @@
     <ClInclude Include="ComponentAnimation.h" />
     <ClInclude Include="ComponentAudioListener.h" />
     <ClInclude Include="ComponentAudioSource.h" />
+    <ClInclude Include="ComponentBehaviourTree.h" />
     <ClInclude Include="ComponentBoxTrigger.h" />
     <ClInclude Include="ComponentButton.h" />
     <ClInclude Include="ComponentCamera.h" />
@@ -334,6 +335,7 @@
     <ClCompile Include="ComponentAnimation.cpp" />
     <ClCompile Include="ComponentAudioListener.cpp" />
     <ClCompile Include="ComponentAudioSource.cpp" />
+    <ClCompile Include="ComponentBehaviourTree.cpp" />
     <ClCompile Include="ComponentBoxTrigger.cpp" />
     <ClCompile Include="ComponentButton.cpp" />
     <ClCompile Include="ComponentCamera.cpp" />

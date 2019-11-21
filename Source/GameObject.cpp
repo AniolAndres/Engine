@@ -22,6 +22,7 @@
 #include "ComponentCamera.h"
 #include "ComponentLight.h"
 #include "ComponentRenderer.h"
+#include "ComponentBehaviourTree.h"
 #include "ComponentTransform2D.h"
 #include "ComponentText.h"
 #include "ComponentImage.h"
@@ -498,6 +499,9 @@ ENGINE_API Component* GameObject::CreateComponent(ComponentType type, JSON_value
 		break;
 	case ComponentType::Text:
 		component = new Text(this);
+		break;
+	case ComponentType::BehaviourTree:
+		component = new ComponentBehaviourTree(this);
 		break;
 	case ComponentType::Image:
 		component = new ComponentImage(this);

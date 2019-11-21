@@ -30,6 +30,7 @@
 #include "MaterialEditor.h"
 #include "FileExplorer.h"
 #include "GUICreator.h"
+#include "NodeEditor.h"
 #include "PlayerPrefs.h"
 #include "imgui.h"
 #include "imgui_impl_opengl3.h"
@@ -443,6 +444,15 @@ void ModuleEditor::ShowInspector()
 	{
 		inspector->SetFocus();
 	}
+}
+
+ENGINE_API ModuleEditor::EditorContext* ModuleEditor::CreateNodeEditorContext(const char* name)
+{
+	EditorContext* context;
+	ax::NodeEditor::Config cfg;
+	cfg.SettingsFile = name;
+	context = ax::NodeEditor::CreateEditor(&cfg);
+	return context;
 }
 
 void ModuleEditor::AddFpsLog(float dt) const

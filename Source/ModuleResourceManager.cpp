@@ -299,6 +299,14 @@ bool ModuleResourceManager::ImportFile(const char* newFileInAssets, const char* 
 		}
 		exportedFile = IMPORTED_STATEMACHINES + std::to_string(resource->GetUID()) + STATEMACHINEEXTENSION;
 		break;
+	case TYPE::BEHAVIOURTREE:
+		success = App->fsystem->Copy(filePath, IMPORTED_BEHAVIOURTREES, newFileInAssets);
+		if (success)
+		{
+			success = App->fsystem->Rename(IMPORTED_BEHAVIOURTREES, (name + BEHAVIOURTREEEXTENSION).c_str(), std::to_string(resource->GetUID()).c_str());
+		}
+		exportedFile = IMPORTED_BEHAVIOURTREES + std::to_string(resource->GetUID()) + BEHAVIOURTREEEXTENSION;
+		break;
 	case TYPE::PREFAB: //TODO: update reimport PREFAB
 		success = App->fsystem->importer.ImportPrefab(newFileInAssets, filePath, (ResourcePrefab*)resource);
 		exportedFile = IMPORTED_PREFABS + std::to_string(resource->GetUID()) + PREFABEXTENSION;

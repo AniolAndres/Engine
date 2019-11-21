@@ -20,6 +20,7 @@
 // Library
 #define MESHES LIBRARY "Meshes/"
 #define TEXTURES LIBRARY "Textures/"
+#define IMPORTED_BEHAVIOURTREES LIBRARY "BehaviourTrees/"
 #define IMPORTED_MATERIALS LIBRARY "Materials/"
 #define IMPORTED_ANIMATIONS LIBRARY "Animations/"
 #define IMPORTED_STATEMACHINES LIBRARY "StateMachines/"
@@ -29,6 +30,7 @@
 
 // Assets
 #define MATERIALS ASSETS "Materials/"
+#define BEHAVIOURTREES ASSETS "BehaviourTrees/"
 #define STATEMACHINES ASSETS "StateMachines/"
 #define ANIMATIONS ASSETS "Animations/"
 #define SCENES ASSETS "Scenes/"
@@ -46,6 +48,7 @@
 #define MESHEXTENSION ".m3sh"
 #define SCENEEXTENSION ".sc3ne"
 #define ANIMATIONEXTENSION ".animati0n"
+#define BEHAVIOURTREEEXTENSION ".btr33"
 #define STATEMACHINEEXTENSION ".st4tem4chine"
 #define PREFABEXTENSION ".pr3fab"
 

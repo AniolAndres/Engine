@@ -3,6 +3,8 @@
 
 #include <list>
 #include "Module.h"
+#include "NodeEditor.h"
+#include "HashString.h"
 #include "SDL_events.h"
 
 class Panel;
@@ -27,6 +29,7 @@ class PanelResourceManagerUnused;
 class ModuleEditor :
 	public Module
 {
+	typedef ax::NodeEditor::EditorContext EditorContext;
 public:
 	ModuleEditor();
 	~ModuleEditor();
@@ -37,6 +40,8 @@ public:
 
 	void RenderGUI() const;
 	void ShowInspector();
+
+	ENGINE_API EditorContext* CreateNodeEditorContext(const char* name );
 
 	void processInput(SDL_Event* event) const;
 	void AddFpsLog(float dt) const;

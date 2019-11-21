@@ -27,22 +27,54 @@ public:
 	void LoadConfigFromMeta() override;
 	void LoadConfigFromLibraryMeta() override;
 
+public:
+
+	void AddNode(HashString name);
+	void AddTransition(HashString origin, HashString destiny);
+
+	unsigned FindNode(const HashString name);
+	unsigned FindTransition(const HashString origin, const HashString destiny);
+
 private:
 
 	struct Node
 	{
 		HashString nodeName;
 		NodeType nodeType;
+
+		Node() { ; }
+		Node(HashString n) : nodeName(n) { LOG("Node created"); }
 	};
-	
+
+	struct LeafNode : Node
+	{
+		HashString taskName;
+
+		LeafNode() { ; }
+		LeafNode(HashString t) : taskName(t) { LOG("LeafNode created"); }
+	};
+
+	struct CompositeNode : Node
+	{
+		CompositeNode() { LOG("CompositeNode created"); }
+	};
+
+	struct DecoratorNode : Node
+	{
+		DecoratorNode() { LOG("DecoratorNode Created"); }
+	};
+
 	struct Transition
 	{
 		HashString origin;
 		HashString destiny;
+
+		Transition() { ; }
+		Transition(HashString o, HashString d) : origin(o), destiny(d) {;}
 	};
 
-	std::vector<Node*> nodes;
-	std::vector<Transition*> transitions;
+	std::vector<Node> nodes;
+	std::vector<Transition> transitions;
 };
 
 #endif

@@ -23,7 +23,8 @@ enum class ComponentType
 	AudioListener,
 	AudioSource,
 	BoxTrigger,
-	VolumetricLight
+	VolumetricLight,
+	BehaviourTree
 };
 
 class ENGINE_API Component

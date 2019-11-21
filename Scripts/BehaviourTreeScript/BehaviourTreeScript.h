@@ -12,13 +12,14 @@
 #endif
 
 class Node;
+class ResourceBehaviourTree;
 
 class BehaviourTreeScript_API BehaviourTreeScript : public Script
 {
+
 	void Awake() override;
 	void Start() override;
-
-	Node* RootNode = nullptr;
+	
 };
 
 extern "C" BehaviourTreeScript_API Script* CreateScript();
