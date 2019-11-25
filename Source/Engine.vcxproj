@@ -190,6 +190,8 @@
     <ClInclude Include="AnimationController.h" />
     <ClInclude Include="Application.h" />
     <ClInclude Include="BaseScript.h" />
+    <ClInclude Include="BehaviourNode.h" />
+    <ClInclude Include="BehaviourTransition.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="ComponentAnimation.h" />
     <ClInclude Include="ComponentAudioListener.h" />
@@ -208,8 +210,10 @@
     <ClInclude Include="ComponentTransform.h" />
     <ClInclude Include="ComponentTransform2D.h" />
     <ClInclude Include="ComponentVolumetricLight.h" />
+    <ClInclude Include="CompositeNode.h" />
     <ClInclude Include="debugdraw.h" />
     <ClInclude Include="debug_draw.hpp" />
+    <ClInclude Include="DecoratorNode.h" />
     <ClInclude Include="DetourDebugInterface.h" />
     <ClInclude Include="FileExplorer.h" />
     <ClInclude Include="GameObject.h" />
@@ -220,6 +224,7 @@
     <ClInclude Include="ImGuizmo\ImGuizmo.h" />
     <ClInclude Include="imgui_color_gradient.h" />
     <ClInclude Include="KDTree.h" />
+    <ClInclude Include="LeafNode.h" />
     <ClInclude Include="MaterialEditor.h" />
     <ClInclude Include="MathGeoLib\include\Math\myassert.h" />
     <ClInclude Include="MemoryModule.h" />
@@ -331,6 +336,8 @@
     <ClCompile Include="AnimationController.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="BaseScript.cpp" />
+    <ClCompile Include="BehaviourNode.cpp" />
+    <ClCompile Include="BehaviourTransition.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="ComponentAnimation.cpp" />
     <ClCompile Include="ComponentAudioListener.cpp" />
@@ -349,6 +356,8 @@
     <ClCompile Include="ComponentTransform.cpp" />
     <ClCompile Include="ComponentTransform2D.cpp" />
     <ClCompile Include="ComponentVolumetricLight.cpp" />
+    <ClCompile Include="CompositeNode.cpp" />
+    <ClCompile Include="DecoratorNode.cpp" />
     <ClCompile Include="DetourDebugInterface.cpp" />
     <ClCompile Include="FileExplorer.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -357,6 +366,7 @@
     <ClCompile Include="ImGuizmo\ImGuizmo.cpp" />
     <ClCompile Include="imgui_color_gradient.cpp" />
     <ClCompile Include="KDTree.cpp" />
+    <ClCompile Include="LeafNode.cpp" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="MaterialEditor.cpp" />

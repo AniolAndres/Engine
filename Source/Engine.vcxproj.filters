@@ -337,6 +337,21 @@
     <ClCompile Include="ComponentBehaviourTree.cpp">
       <Filter>Component</Filter>
     </ClCompile>
+    <ClCompile Include="BehaviourNode.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="CompositeNode.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="DecoratorNode.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="LeafNode.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="BehaviourTransition.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -739,6 +754,21 @@
     <ClInclude Include="ComponentBehaviourTree.h">
       <Filter>Component</Filter>
     </ClInclude>
+    <ClInclude Include="BehaviourNode.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="CompositeNode.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="DecoratorNode.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="LeafNode.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourTransition.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Modules">
@@ -785,6 +815,9 @@
     </Filter>
     <Filter Include="SoLoud">
       <UniqueIdentifier>{2999c853-b5ef-41d3-b71b-d7547af0c9f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Behaviour">
+      <UniqueIdentifier>{51241d37-e500-4ddb-83e6-376caa7f2a63}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

@@ -1,6 +1,14 @@
 #include "ResourceBehaviourTree.h"
 
+#include "Application.h"
+#include "ModuleResourceManager.h"
+#include "ModuleFileSystem.h"
 
+#include "BehaviourTransition.h"
+#include "BehaviourNode.h"
+#include "CompositeNode.h"
+#include "DecoratorNode.h"
+#include "LeafNode.h"
 
 ResourceBehaviourTree::ResourceBehaviourTree(unsigned uid) : Resource(uid, TYPE::BEHAVIOURTREE)
 {
@@ -39,27 +47,112 @@ void ResourceBehaviourTree::LoadConfigFromLibraryMeta()
 {
 }
 
-void ResourceBehaviourTree::AddNode(HashString name)
+void ResourceBehaviourTree::Save()
 {
-	nodes.emplace_back(name);
+	char* behaviourTreeData = nullptr;
+	unsigned btSize = GetBTSize();
+	behaviourTreeData = new char[btSize];
+	SaveBehaviourTreeData(behaviourTreeData);
+
+	App->fsystem->Save((BEHAVIOURTREES + name + BEHAVIOURTREEEXTENSION).c_str(), behaviourTreeData, btSize);
+	SetFile((BEHAVIOURTREES + name + BEHAVIOURTREEEXTENSION).c_str());
+	RELEASE_ARRAY(behaviourTreeData);
 }
 
-void ResourceBehaviourTree::AddTransition(HashString origin, HashString destiny)
+void ResourceBehaviourTree::SaveBehaviourTreeData(char * data)
 {
-	transitions.emplace_back(origin, destiny);
+	char* cursor = data;
+}
+
+unsigned ResourceBehaviourTree::GetBTSize()
+{
+	return 0;
+}
+
+void ResourceBehaviourTree::CreateNode(HashString name, NodeType type)
+{
+	BehaviourNode* newNode = nullptr;
+
+	switch (type)
+	{
+	case NodeType::Composite:
+		newNode = new CompositeNode();
+		break;
+	case NodeType::Decorator:
+		newNode = new DecoratorNode();
+		break;
+	case NodeType::Leaf:
+		newNode = new LeafNode();
+		break;
+	}
+
+	if (newNode != nullptr)
+	{
+		newNode->name = name;
+		nodes.push_back(newNode);
+	}
+
+}
+
+void ResourceBehaviourTree::CreateTransition(BehaviourNode * origin, BehaviourNode * destiny)
+{
+	BehaviourTransition* newTransition = new BehaviourTransition(origin, destiny);
+
+	transitions.push_back(newTransition);
+}
+
+void ResourceBehaviourTree::RemoveNodeTransitions(HashString nodeName)
+{
+	//std::vector<Transition>::iterator it = transitions.begin();
+
+	//while (it != transitions.end())
+	//{
+	//	if (it->origin == nodeName || it->destiny == nodeName)
+	//	{
+	//		it = transitions.erase(it);
+	//	}
+	//	else
+	//	{
+	//		++it;
+	//	}
+	//}
+}
+
+void ResourceBehaviourTree::RemoveTransition(unsigned UID)
+{
+	/*transitions.erase(transitions.begin() + UID);*/
+}
+
+void ResourceBehaviourTree::RemoveNode(unsigned UID)
+{
+	//RemoveNodeTransitions(nodes[UID].nodeName);
+	//nodes.erase(nodes.begin() + UID);
+
+	//if (nodes.empty())
+	//{
+	//	defaultNode = 0u;
+	//}
+	//else
+	//{
+	//	if (defaultNode > nodes.size() - 1)
+	//	{
+	//		defaultNode = nodes.size() - 1;
+	//	}
+
+	//}
 }
 
 unsigned ResourceBehaviourTree::FindNode(const HashString name)
 {
 	unsigned i;
 
-	for (i = 0u; i < nodes.size(); ++i)
-	{
-		if (nodes[i].nodeName == name)
-		{
-			break;
-		}
-	}
+	//for (i = 0u; i < nodes.size(); ++i)
+	//{
+	//	if (nodes[i].nodeName == name)
+	//	{
+	//		break;
+	//	}
+	//}
 	return i;
 }
 
@@ -67,12 +160,12 @@ unsigned ResourceBehaviourTree::FindTransition(const HashString origin, const Ha
 {
 	unsigned i;
 
-	for (i = 0u; i < transitions.size(); ++i)
-	{
-		if (transitions[i].origin == origin && transitions[i].destiny == destiny)
-		{
-			break;
-		}
-	}
+	//for (i = 0u; i < transitions.size(); ++i)
+	//{
+	//	if (transitions[i].origin == origin && transitions[i].destiny == destiny)
+	//	{
+	//		break;
+	//	}
+	//}
 	return i;
 }

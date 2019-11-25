@@ -57,9 +57,82 @@ void ComponentBehaviourTree::DrawProperties()
 	ImGui::PushID(this);
 	if (ImGui::CollapsingHeader("Behaviour Tree", ImGuiTreeNodeFlags_DefaultOpen))
 	{
+		bool removed = Component::DrawComponentState();
+		if (removed)
+		{
+			ImGui::PopID();
+			return;
+		}
 
+		if (ImGui::Button("New Tree"))
+		{
+			if (bTree != nullptr)
+				bTree->Save();
+
+			CreateNewBehaviourTree();
+		}
+
+		ImGui::PushID("BTRee Combo");
+		if (ImGui::BeginCombo("Btree", bTree != nullptr ? bTree->GetName() : ""))
+		{
+			if (guiBTrees.empty())
+			{
+				guiBTrees = App->resManager->GetResourceNamesList(TYPE::BEHAVIOURTREE, true);
+			}
+			for (unsigned i = 0u; i < guiBTrees.size(); i++)
+			{
+				bool is_selected = (bTree != nullptr ? bTree->GetName() == guiBTrees[i].c_str() : false);
+				if (ImGui::Selectable(guiBTrees[i].c_str(), is_selected))
+				{
+					if (bTree != nullptr)
+						bTree->Save();
+
+					SetBehaviourTree(guiBTrees[i].c_str());
+				}
+				if (is_selected)
+				{
+					ImGui::SetItemDefaultFocus();
+				}
+			}
+			ImGui::EndCombo();
+		}
+		else
+		{
+			guiBTrees.clear();
+		}
+		ImGui::PopID();
 	}
 	ImGui::PopID();
+}
+
+void ComponentBehaviourTree::CreateNewBehaviourTree()
+{
+	ResourceBehaviourTree* newBTree = new ResourceBehaviourTree(App->resManager->GenerateNewUID());
+
+	newBTree->SetName("NewBehaviourTree");
+
+	//Do not fear the while, accept it
+	if (App->resManager->NameExists(newBTree->GetName(), TYPE::BEHAVIOURTREE))
+	{
+		std::string newName = App->resManager->GetAvailableName(newBTree->GetName(), TYPE::BEHAVIOURTREE);
+		newBTree->Rename(newName.c_str());
+	}
+
+	newBTree->Save();
+	RELEASE(newBTree);
+}
+
+void ComponentBehaviourTree::SetBehaviourTree(const char* btreeFile)
+{
+	// Delete previous Btree
+	if (bTree != nullptr)
+		App->resManager->DeleteResource(bTree->GetUID());
+
+	if (btreeFile != nullptr)
+	{
+		bTree = (ResourceBehaviourTree*)App->resManager->GetByName(btreeFile, TYPE::BEHAVIOURTREE);
+		strcpy(newBTname, bTree->GetName());
+	}
 }
 
 ComponentBehaviourTree::EditorContext * ComponentBehaviourTree::GetEditorBTContext()

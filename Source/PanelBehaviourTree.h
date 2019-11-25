@@ -20,9 +20,16 @@ public:
 	void DrawBT(ResourceBehaviourTree* btree, ax::NodeEditor::EditorContext* context);
 	void DrawNodes(ResourceBehaviourTree* btree);
 	void DrawTransitions(ResourceBehaviourTree* btree);
-
+	void ShowContextMenus(ResourceBehaviourTree* btree);
+	void ShowCreateNewNode(ResourceBehaviourTree* btree);
 
 	void Draw() override;
+
+	unsigned contextNode = 0u;
+	unsigned contextLink = 0u;
+
+	ed::PinId newNodePin = 0;
+	ImVec2 newNodePosition;
 };
 
 #endif // _PANELBEHAVIOURTREE_H_

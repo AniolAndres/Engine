@@ -4,9 +4,12 @@
 #include "Component.h"
 
 #include "NodeEditor.h"
+#include <string>
 
 class GameObject;
 class ResourceBehaviourTree;
+
+#define MAX_BTREE_NAME 30
 
 class ComponentBehaviourTree : public Component
 {
@@ -24,6 +27,9 @@ public:
 	void Load(JSON_value* value) override;
 
 	void DrawProperties() override;
+	void CreateNewBehaviourTree();
+	void SetBehaviourTree(const char* btreeFile);
+
 
 	ResourceBehaviourTree* bTree = nullptr;
 	EditorContext* GetEditorBTContext();
@@ -31,6 +37,10 @@ public:
 private:
 	EditorContext* context = nullptr;
 
+	std::vector<std::string> guiBTrees;
+	std::vector<std::string> guiScripts;
+
+	char newBTname[MAX_BTREE_NAME] = "";
 };
 
 #endif // 

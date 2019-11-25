@@ -53,6 +53,7 @@ public:
 	void Update() override;
 	void OnPlay() override;
 	bool CleanUp();
+
 public:
 
 	unsigned clipIndexToRemove = 0u;
