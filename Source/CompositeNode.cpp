@@ -2,11 +2,13 @@
 
 #include "ResourceBehaviourTree.h"
 
+#include "HashString.h"
+
 CompositeNode::CompositeNode()
 {
 }
 
-CompositeNode::CompositeNode(NodeType type) : BehaviourNode(NodeType::Composite)
+CompositeNode::CompositeNode(HashString name, NodeType type) : BehaviourNode(name, NodeType::Composite)
 {
 }
 

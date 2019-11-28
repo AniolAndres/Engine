@@ -96,6 +96,10 @@ void FileImporter::ImportAsset(const char *file, const char *folder)
 	{
 		App->resManager->ImportFile(file, folder, TYPE::PREFAB);
 	}
+	else if (extension == BEHAVIOURTREEEXTENSION)
+	{
+		App->resManager->ImportFile(file, folder, TYPE::BEHAVIOURTREE);
+	}
 }
 
 bool FileImporter::ImportFBX(const char* fbxfile, const char* folder, ResourceModel* resource)
@@ -512,25 +516,7 @@ void FileImporter::ProcessNode(const std::map<unsigned, unsigned> &meshmap, cons
 
 	std::vector<GameObject*> gameobjects;
 	gameobjects.push_back(gameobject);
-	//for (unsigned k = 1; k < node->mNumMeshes; k++) //Splits meshes of same node into diferent gameobjects 
-	//{
-	//	GameObject *copy = new GameObject(*gameobject);
-	//	gameobjects.push_back(copy);
-	//	copy->parent = gameobject->parent;
-	//	parent->children.push_back(copy);
-	//}
 
-	//for (unsigned i = 0; i < node->mNumMeshes; i++)
-	//{
-	//	ComponentRenderer* crenderer = (ComponentRenderer*)gameobjects[i]->CreateComponent(ComponentType::Renderer);
-	//	auto it = meshmap.find(node->mMeshes[i]);
-	//	if (it != meshmap.end())
-	//	{
-	//		RELEASE(crenderer->mesh);
-	//		crenderer->mesh = App->resManager->GetMesh(it->second);
-	//		gameobjects[i]->UpdateBBox();
-	//	}
-	//}
 	for (unsigned int i = 0; i < node->mNumChildren; i++)
 	{
 		ProcessNode(meshmap, node->mChildren[i], scene, gameobject);

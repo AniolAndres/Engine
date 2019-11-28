@@ -6,7 +6,7 @@ DecoratorNode::DecoratorNode()
 {
 }
 
-DecoratorNode::DecoratorNode(NodeType type) : BehaviourNode(NodeType::Decorator)
+DecoratorNode::DecoratorNode(HashString name, NodeType type) : BehaviourNode(name, NodeType::Decorator)
 {
 
 }

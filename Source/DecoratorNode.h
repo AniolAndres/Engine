@@ -3,12 +3,14 @@
 
 #include "BehaviourNode.h"
 
+#include "HashString.h"
+
 class DecoratorNode :
 	public BehaviourNode
 {
 public:
 	DecoratorNode();
-	DecoratorNode(NodeType type);
+	DecoratorNode(HashString name, NodeType type);
 	~DecoratorNode();
 	
 	void TickNode() override;

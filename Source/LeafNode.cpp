@@ -2,11 +2,13 @@
 
 #include "ResourceBehaviourTree.h"
 
+#include "HashString.h"
+
 LeafNode::LeafNode()
 {
 }
 
-LeafNode::LeafNode(NodeType type) : BehaviourNode(NodeType::Leaf)
+LeafNode::LeafNode(HashString name, NodeType type) : BehaviourNode(name ,NodeType::Leaf)
 {
 
 }

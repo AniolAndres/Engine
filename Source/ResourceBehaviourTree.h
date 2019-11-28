@@ -39,13 +39,14 @@ public:
 	void SaveMetafile(const char* file) const override;
 	void LoadConfigFromMeta() override;
 	void LoadConfigFromLibraryMeta() override;
+	void SetBehaviourTree(const char* data);
 	void Save();
 	void SaveBehaviourTreeData(char* data);
 	unsigned GetBTSize();
 public:
 
 	void CreateNode(HashString name, NodeType type);
-	void CreateTransition(BehaviourNode* origin, BehaviourNode* destiny);
+	void CreateTransition(HashString origin, HashString destiny);
 
 	void RemoveNodeTransitions(HashString nodeName);
 	void RemoveTransition(unsigned UID);
@@ -53,16 +54,17 @@ public:
 
 	unsigned FindNode(const HashString name);
 	unsigned FindTransition(const HashString origin, const HashString destiny);
+	HashString GetNodeName(unsigned index);
+	unsigned GetNodeType(unsigned index);
 
-
-	inline unsigned GetNodesSize() { return nodes.size(); }
-	inline unsigned GetTransitionsSize() { return transitions.size(); }
+	unsigned GetNodesSize();
+	unsigned GetTransitionsSize();
 
 private:
 
-	std::vector<BehaviourNode*> nodes;
-	std::vector<BehaviourTransition*> transitions;
-	unsigned defaultNode = 0u;
+	std::vector<BehaviourNode> nodes;
+	std::vector<BehaviourTransition> transitions;
+	BehaviourNode* rootNode = nullptr;	
 };
 
 #endif

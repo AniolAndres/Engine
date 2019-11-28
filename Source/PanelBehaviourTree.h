@@ -10,6 +10,7 @@ namespace ed = ax::NodeEditor;
 
 class ResourceBehaviourTree;
 class BehaviourTreeScript;
+enum class NodeType;
 
 class PanelBehaviourTree : public Panel
 {

@@ -1,17 +1,16 @@
 #include "BehaviourTransition.h"
 
 #include "BehaviourNode.h"
+#include "HashString.h"
 
 BehaviourTransition::BehaviourTransition()
 {
 }
 
-BehaviourTransition::BehaviourTransition(BehaviourNode * origin, BehaviourNode * destiny)
+BehaviourTransition::BehaviourTransition(HashString origin, HashString destiny)
 {
-	originNode = origin;
-	originName = origin->name;
-	destinyNode = destiny;
-	destinyName = destiny->name;
+	originName = origin;
+	destinyName = destiny;
 }
 
 BehaviourTransition::~BehaviourTransition()

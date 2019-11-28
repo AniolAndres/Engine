@@ -19,6 +19,7 @@
 #include "ResourcePrefab.h"
 #include "ResourceScene.h"
 #include "ResourceAudio.h"
+#include "ResourceBehaviourTree.h"
 
 #include "FileImporter.h"
 
@@ -386,6 +387,14 @@ bool ModuleResourceManager::ReImportFile(Resource* resource, const char* filePat
 				std::to_string(resource->GetUID()).c_str());
 		}
 		break;
+	case TYPE::BEHAVIOURTREE:
+		success = App->fsystem->Copy(filePath, IMPORTED_BEHAVIOURTREES, file.c_str());
+		if (success)
+		{
+			success = App->fsystem->Rename(IMPORTED_BEHAVIOURTREES, App->fsystem->GetFile(file).c_str(),
+				std::to_string(resource->GetUID()).c_str());
+		}
+		break;
 	case TYPE::PREFAB:
 		success = App->fsystem->importer.ImportPrefab(file.c_str(), filePath, (ResourcePrefab*)resource);
 	}
@@ -431,6 +440,7 @@ Resource* ModuleResourceManager::CreateNewResource(TYPE type, unsigned forceUid)
 	case TYPE::STATEMACHINE:	resource = (Resource*) new ResourceStateMachine(uid);	break;
 	case TYPE::AUDIO:			resource = (Resource*) new ResourceAudio(uid);			break;
 	case TYPE::PREFAB:          resource = (Resource*) new ResourcePrefab(uid);			break;
+	case TYPE::BEHAVIOURTREE:	resource = (Resource*) new ResourceBehaviourTree(uid);	break;
 	}
 
 	if (resource != nullptr)
@@ -699,6 +709,7 @@ TYPE ModuleResourceManager::GetResourceType(FILETYPE fileType) const
 	case FILETYPE::STATEMACHINE:		return TYPE::STATEMACHINE;	break;
 	case FILETYPE::AUDIO:				return TYPE::AUDIO;			break;
 	case FILETYPE::PREFAB:				return TYPE::PREFAB;		break;
+	case FILETYPE::BEHAVIOURTREE:		return TYPE::BEHAVIOURTREE;	break;
 	default:
 	case FILETYPE::NONE:				return TYPE::UNKNOWN;		break;
 	}
@@ -837,6 +848,7 @@ Resource* ModuleResourceManager::AddResource(const char* file, const char* direc
 		case TYPE::ANIMATION:	exportedFile = IMPORTED_ANIMATIONS		+ std::to_string(uid) + ANIMATIONEXTENSION;		break;
 		case TYPE::STATEMACHINE:exportedFile = IMPORTED_STATEMACHINES	+ std::to_string(uid) + STATEMACHINEEXTENSION;	break;
 		case TYPE::PREFAB:		exportedFile = IMPORTED_PREFABS			+ std::to_string(uid) + PREFABEXTENSION;		break;
+		case TYPE::BEHAVIOURTREE: exportedFile = IMPORTED_BEHAVIOURTREES+ std::to_string(uid) + BEHAVIOURTREEEXTENSION;	break;
 		default:
 			break;
 			}
@@ -912,6 +924,7 @@ unsigned ModuleResourceManager::GetUIDFromMeta(const char* metaFile, FILETYPE fi
 	case TYPE::ANIMATION:	value = json->GetValue("Animation");	break;
 	case TYPE::STATEMACHINE:value = json->GetValue("StateMachine");	break;
 	case TYPE::PREFAB:      value = json->GetValue("Prefab");		break;
+	case TYPE::BEHAVIOURTREE: value = json->GetValue("BehaviourTree"); break;
 	case TYPE::MODEL:		
 		value = json->GetValue("Model");	// Try old meta version
 		if (value == nullptr)

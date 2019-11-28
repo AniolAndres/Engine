@@ -9,7 +9,7 @@ class BehaviourNode
 {
 public:
 	BehaviourNode();
-	BehaviourNode(NodeType type);
+	BehaviourNode(HashString name, NodeType type);
 	virtual ~BehaviourNode();
 
 public:
@@ -17,8 +17,6 @@ public:
 
 public:
 	HashString name = HashString("default Node name");
-
-protected:
 	NodeType type;
 };
 

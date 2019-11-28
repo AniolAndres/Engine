@@ -3,11 +3,13 @@
 
 #include "BehaviourNode.h"
 
+#include "HashString.h"
+
 class CompositeNode : public BehaviourNode
 {
 public:
 	CompositeNode();
-	CompositeNode(NodeType type);
+	CompositeNode(HashString name, NodeType type);
 	~CompositeNode();
 
 	void TickNode() override;

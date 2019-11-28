@@ -1,12 +1,14 @@
 #include "BehaviourNode.h"
 
+#include "HashString.h"
 
+#include <string>
 
 BehaviourNode::BehaviourNode()
 {
 }
 
-BehaviourNode::BehaviourNode(NodeType type) : type(type)
+BehaviourNode::BehaviourNode(HashString name, NodeType type) : type(type), name(name)
 {
 }
 

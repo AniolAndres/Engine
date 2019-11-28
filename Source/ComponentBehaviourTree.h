@@ -5,6 +5,7 @@
 
 #include "NodeEditor.h"
 #include <string>
+#include <vector>
 
 class GameObject;
 class ResourceBehaviourTree;

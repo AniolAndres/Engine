@@ -64,6 +64,8 @@ ModuleFileSystem::ModuleFileSystem()
 		MakeDirectory(IMPORTED_STATEMACHINES);
 	if (!Exists(IMPORTED_AUDIOS))
 		MakeDirectory(IMPORTED_AUDIOS);
+	if (!Exists(IMPORTED_BEHAVIOURTREES))
+		MakeDirectory(IMPORTED_BEHAVIOURTREES);
 	if (!Exists(MESHES))
 		MakeDirectory(MESHES);
 	if (!Exists(TEXTURES))
@@ -670,15 +672,6 @@ void ModuleFileSystem::LookForNewResourceFiles(const char* folder)
 	}
 }
 
-#define MESHES LIBRARY "Meshes/"
-#define TEXTURES LIBRARY "Textures/"
-#define IMPORTED_MATERIALS LIBRARY "Materials/"
-#define IMPORTED_ANIMATIONS LIBRARY "Animations/"
-#define IMPORTED_STATEMACHINES LIBRARY "StateMachines/"
-#define IMPORTED_SCENES LIBRARY "Scenes/"
-#define IMPORTED_AUDIOS LIBRARY "Audios/"
-#define IMPORTED_PREFABS LIBRARY "Prefabs/"
-
 void ModuleFileSystem::AddResourcesToResourceList(const char* folder)
 {
 	// Get lists with all imported resources and materials
@@ -698,6 +691,7 @@ void ModuleFileSystem::AddResourcesToResourceList(const char* folder)
 		else if (folder == HashString(IMPORTED_SCENES))			resourceType = TYPE::SCENE;
 		else if (folder == HashString(IMPORTED_AUDIOS))			resourceType = TYPE::AUDIO;
 		else if (folder == HashString(IMPORTED_PREFABS))		resourceType = TYPE::PREFAB;
+		else if (folder == HashString(IMPORTED_BEHAVIOURTREES))	resourceType = TYPE::BEHAVIOURTREE;
 		else continue;
 
 		App->resManager->AddResourceFromLibrary(resource.c_str(), resourceType);
@@ -834,6 +828,10 @@ FILETYPE ModuleFileSystem::GetFileType(std::string extension) const
 	if (extension == PREFABEXTENSION)
 	{
 		return FILETYPE::PREFAB;
+	}
+	if (extension == BEHAVIOURTREEEXTENSION)
+	{
+		return FILETYPE::BEHAVIOURTREE;
 	}
 	return FILETYPE::NONE;
 }

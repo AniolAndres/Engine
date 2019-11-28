@@ -3,21 +3,15 @@
 
 #include "HashString.h"
 
-class BehaviourNode;
-
 class BehaviourTransition
 {
 public:
 	BehaviourTransition();
-	BehaviourTransition(BehaviourNode* origin, BehaviourNode* destiny);
+	BehaviourTransition(HashString origin, HashString destiny);
 	~BehaviourTransition();
 
-private:
-	BehaviourNode* originNode = nullptr;
-	BehaviourNode* destinyNode = nullptr;
-
-	HashString originName = HashString("defaultOrigin");
-	HashString destinyName = HashString("defaultDestiny");
+	HashString originName;
+	HashString destinyName;
 };
 
 #endif 
