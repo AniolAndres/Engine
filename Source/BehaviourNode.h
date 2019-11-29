@@ -14,10 +14,12 @@ public:
 
 public:
 	virtual void TickNode() {}
+	virtual void CleanNode() {}
 
 public:
-	HashString name = HashString("default Node name");
+	HashString name;
 	NodeType type;
+	bool isRoot = false;
 };
 
 #endif //

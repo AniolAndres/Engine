@@ -8,15 +8,17 @@
 
 class BehaviourNode;
 class CompositeNode;
+class RootBehaviourNode;
 class LeafNode;
 class DecoratorNode;
 class BehaviourTransition;
 
 enum class NodeType
 {
-	Composite,
+	Composite = 0,
 	Decorator,
-	Leaf
+	Leaf,
+	Root
 };
 
 enum class TickStatus
@@ -25,6 +27,8 @@ enum class TickStatus
 	FAILURE,
 	CONTINUE
 };
+
+#define MAX_BT_NAME 64
 
 class ResourceBehaviourTree : public Resource
 {
@@ -57,14 +61,19 @@ public:
 	HashString GetNodeName(unsigned index);
 	unsigned GetNodeType(unsigned index);
 
+	HashString GetTransitionOrigin(unsigned index);
+	HashString GetTransitionDestiny(unsigned index);
+
 	unsigned GetNodesSize();
 	unsigned GetTransitionsSize();
 
+	void BuildTree();
+	void CleanTree();
 private:
 
 	std::vector<BehaviourNode> nodes;
 	std::vector<BehaviourTransition> transitions;
-	BehaviourNode* rootNode = nullptr;	
+	RootBehaviourNode* rootNode = nullptr;	
 };
 
 #endif

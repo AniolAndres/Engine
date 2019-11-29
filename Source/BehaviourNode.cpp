@@ -8,7 +8,7 @@ BehaviourNode::BehaviourNode()
 {
 }
 
-BehaviourNode::BehaviourNode(HashString name, NodeType type) : type(type), name(name)
+BehaviourNode::BehaviourNode(HashString name, NodeType type) : name(name) , type(type)
 {
 }
 

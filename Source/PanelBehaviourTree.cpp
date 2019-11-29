@@ -27,18 +27,25 @@ PanelBehaviourTree::~PanelBehaviourTree()
 
 void PanelBehaviourTree::DrawBT(ResourceBehaviourTree * btree, ax::NodeEditor::EditorContext * context)
 {
+	
+	auto& io = ImGui::GetIO();
 
-		auto& io = ImGui::GetIO();
+	ed::SetCurrentEditor(context);
+	ed::Begin("Behaviour Tree Editor", ImVec2(0.0, 0.0f));
 
-		ed::SetCurrentEditor(context);
-		ed::Begin("Behaviour Tree Editor", ImVec2(0.0, 0.0f));
+	DrawNodes(btree);
+	DrawTransitions(btree);
+	ManageCreate(btree);
+	ShowContextMenus(btree);
 
-		ShowContextMenus(btree);
-		ShowCreateNewNode(btree);
+	ed::Suspend();
+	ShowNodeMenu(btree);
+	ShowCreateNewNode(btree);
+	ed::Resume();
 
-		ed::End();
-		ed::SetCurrentEditor(nullptr);
 
+	ed::End();
+	ed::SetCurrentEditor(nullptr);
 }
 
 void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
@@ -81,6 +88,9 @@ void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
 		case NodeType::Leaf:
 			ImGui::Text("Leaf Node");
 			break;
+		case NodeType::Root:
+			ImGui::Text("Root Node");
+			break;
 		}
 
 		drawList->AddLine(
@@ -90,8 +100,19 @@ void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
 
 		ImGui::Dummy(ImVec2(64.0, 8.0));
 
+		// In Pin
+		ed::PushStyleVar(ed::StyleVar_PinArrowSize, 8.0f);
+		ed::PushStyleVar(ed::StyleVar_PinArrowWidth, 8.0f);
+		ed::PushStyleVar(ed::StyleVar_PinRadius, 10.0f);
+		ed::PushStyleVar(ed::StyleVar_TargetDirection, ImVec2(0.0f, 0.0f));
+		ed::BeginPin(i * 3 + 2, ed::PinKind::Input);
+		ImGui::Text("In");
+		ed::EndPin();
+		ed::PopStyleVar(4);
+
 		// Out Pin
-		ImGui::SameLine(size.x/2);
+	
+		ImGui::SameLine(size.x - 40);
 		ed::PushStyleVar(ed::StyleVar_PinArrowSize, 0.0f);
 		ed::PushStyleVar(ed::StyleVar_PinArrowWidth, 0.0f);
 		ed::PushStyleVar(ed::StyleVar_TargetDirection, ImVec2(0.0f, 0.0f));
@@ -104,6 +125,70 @@ void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
 		ed::PopStyleVar(3);
 		ed::PopStyleColor(2);
 	}
+}
+
+void PanelBehaviourTree::ShowNodeMenu(ResourceBehaviourTree * btree)
+{
+	if (ImGui::BeginPopup("Node Context BT Menu"))
+	{
+		ImGui::TextUnformatted("Transition Context Menu");
+		ImGui::Separator();
+
+		//Node Name
+		//char* nodeName = new char[MAX_BT_NAME];
+		//strcpy(nodeName, btree->GetNodeName(contextNode).C_str());
+		//ImGui::InputText("Node name", nodeName, MAX_BT_NAME);
+		////WARNING, if the node name changes the transitions containing it must also change!
+
+		//btree->SetNodeName(contextNode, HashString(nodeName));
+
+		//We need a checkbox to determine the defaultNode
+
+		//if (ImGui::BeginCombo("Clip", stateMachine->GetNodeClip(contextNode).C_str()))
+		//{
+		//	for (unsigned i = 0u; i < stateMachine->GetClipsSize(); i++)
+		//	{
+		//		bool isSelected = stateMachine->GetNodeClip(contextNode) == stateMachine->GetClipName(i);
+		//		if (ImGui::Selectable(stateMachine->GetClipName(i).C_str(), isSelected))
+		//		{
+		//			stateMachine->SetNodeClip(contextNode, stateMachine->GetClipName(i));
+		//			stateMachine->Save();
+		//		}
+		//		if (isSelected)
+		//		{
+		//			ImGui::SetItemDefaultFocus();
+		//		}
+		//	}
+		//	ImGui::EndCombo();
+		//}
+
+		//ImGui::Separator();
+
+		if (ImGui::MenuItem("Delete"))
+		{
+			ed::DeleteNode(ed::NodeId((contextNode + 1) * 3));
+			btree->RemoveNode(contextNode);
+			btree->Save();
+		}
+		ImGui::EndPopup();
+	}
+}
+
+void PanelBehaviourTree::DrawTransitions(ResourceBehaviourTree * btree)
+{
+	ed::PushStyleVar(ed::StyleVar_LinkStrength, 4.0f);
+	unsigned numNodes = btree->GetNodesSize();
+	for (unsigned i = 0u, count = btree->GetTransitionsSize(); i < count; ++i)
+	{
+		unsigned origin = btree->FindNode(btree->GetTransitionOrigin(i));
+		unsigned destiny = btree->FindNode(btree->GetTransitionDestiny(i));
+
+		if (origin < numNodes && destiny < numNodes)
+		{
+			ed::Link(numNodes * 3 + i + 1, origin * 3 + 3, destiny * 3 + 2);
+		}
+	}
+	ed::PopStyleVar(1);
 }
 
 void PanelBehaviourTree::ShowContextMenus(ResourceBehaviourTree* btree)
@@ -142,15 +227,139 @@ void PanelBehaviourTree::ShowCreateNewNode(ResourceBehaviourTree * btree)
 
 	if (ImGui::BeginPopup("Create New BT Node"))
 	{
-		ImGui::TextUnformatted("Create Node Menu");
+		ImGui::TextUnformatted("Create BT Node Menu");
 		ImGui::Separator();
 
-		if (ImGui::BeginMenu("New Node"))
+		if (ImGui::BeginMenu("New Behaviour Node"))
 		{
+
+			
+			if (ImGui::MenuItem("Composite"))
+			{
+				unsigned nodeIndex = btree->GetNodesSize();
+				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
+				btree->CreateNode(HashString("New Composite Node"), NodeType::Composite);
+				btree->Save();
+			}
+			if (ImGui::MenuItem("Decorator"))
+			{
+				unsigned nodeIndex = btree->GetNodesSize();
+				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
+				btree->CreateNode(HashString("New Decorator Node"), NodeType::Decorator);
+				btree->Save();
+			}
+			if (ImGui::MenuItem("Leaf"))
+			{
+				unsigned nodeIndex = btree->GetNodesSize();
+				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
+				btree->CreateNode(HashString("New Leaf Node"), NodeType::Leaf);
+				btree->Save();
+			}
+			if (ImGui::MenuItem("Root"))
+			{
+				unsigned nodeIndex = btree->GetNodesSize();
+				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
+				btree->CreateNode(HashString("New Root Node"), NodeType::Root);
+				btree->Save();
+			}
+
 			ImGui::EndMenu();
 		}
+		
+
 		ImGui::EndPopup();
 	}
+
+}
+
+void PanelBehaviourTree::ManageCreate(ResourceBehaviourTree * btree)
+{
+	if (ed::BeginCreate(ImColor(255, 255, 255), 2.0f))
+	{
+		auto showLabel = [](const char* label, ImColor color)
+		{
+			ImGui::SetCursorPosY(ImGui::GetCursorPosY() - ImGui::GetTextLineHeight());
+			auto size = ImGui::CalcTextSize(label);
+
+			auto padding = ImGui::GetStyle().FramePadding;
+			auto spacing = ImGui::GetStyle().ItemSpacing;
+
+			ImGui::SetCursorPos(ImGui::GetCursorPos() + ImVec2(spacing.x, -spacing.y));
+
+			auto rectMin = ImGui::GetCursorScreenPos() - padding;
+			auto rectMax = ImGui::GetCursorScreenPos() + size + padding;
+
+			auto drawList = ImGui::GetWindowDrawList();
+			drawList->AddRectFilled(rectMin, rectMax, color, size.y * 0.15f);
+			ImGui::TextUnformatted(label);
+		};
+
+		ed::PinId startPinId = 0, endPinId = 0;
+		if (ed::QueryNewLink(&startPinId, &endPinId))
+		{
+			if (startPinId && endPinId)
+			{
+				bool startIsInput = unsigned(startPinId.Get() - 1) % 3 == 1;
+				bool endIsInput = unsigned(endPinId.Get() - 1) % 3 == 1;
+				unsigned startNode = unsigned(startPinId.Get() - 1) / 3;
+				unsigned endNode = unsigned(endPinId.Get() - 1) / 3;
+
+				if (endPinId == startPinId)
+				{
+					ed::RejectNewItem(ImColor(255, 0, 0), 2.0f);
+				}
+				else if (startIsInput == endIsInput)
+				{
+					showLabel("x Incompatible Pins. Must be In->Out", ImColor(45, 32, 32, 180));
+					ed::RejectNewItem(ImColor(255, 0, 0), 2.0f);
+				}
+				else if (startNode == endNode)
+				{
+					showLabel("x Cannot connect to self", ImColor(45, 32, 32, 180));
+					ed::RejectNewItem(ImColor(255, 0, 0), 1.0f);
+				}
+				else
+				{
+					showLabel("+ Create Link", ImColor(32, 45, 32, 180));
+					if (ed::AcceptNewItem(ImColor(128, 255, 128), 4.0f))
+					{
+						if (startIsInput)
+						{
+							btree->CreateTransition(btree->GetNodeName(endNode), btree->GetNodeName(startNode));
+						}
+						else
+						{
+							btree->CreateTransition(btree->GetNodeName(startNode), btree->GetNodeName(endNode));
+						}
+						btree->Save();
+					}
+				}
+			}
+		}
+
+		if (ed::QueryNewNode(&newNodePin))
+		{
+			bool pinIsInput = unsigned(newNodePin.Get() - 1) % 3 == 1;
+
+			if (!pinIsInput)
+			{
+				if (newNodePin != ed::PinId::Invalid)
+				{
+					showLabel("+ Create Node", ImColor(32, 45, 32, 180));
+				}
+
+				if (ed::AcceptNewItem())
+				{
+					ed::Suspend();
+					newNodePosition = ImGui::GetMousePos();
+					ImGui::OpenPopup("Create New BT Node");
+					ed::Resume();
+				}
+			}
+		}
+	}
+
+	ed::EndCreate();
 }
 
 void PanelBehaviourTree::Draw()
@@ -165,7 +374,7 @@ void PanelBehaviourTree::Draw()
 	{
 		ComponentBehaviourTree* btComp = App->scene->selected->GetComponent<ComponentBehaviourTree>();
 
-		if (btComp != nullptr)
+		if (btComp->bTree != nullptr)
 		{
 			DrawBT(btComp->bTree, btComp->GetEditorBTContext());
 		}

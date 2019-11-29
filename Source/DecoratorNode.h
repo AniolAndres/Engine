@@ -14,6 +14,9 @@ public:
 	~DecoratorNode();
 	
 	void TickNode() override;
+	void CleanNode() override;
+
+	BehaviourNode* child = nullptr;
 };
 
 #endif

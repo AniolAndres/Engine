@@ -8,6 +8,7 @@
 #include "BehaviourNode.h"
 #include "CompositeNode.h"
 #include "DecoratorNode.h"
+#include "RootBehaviourNode.h"
 #include "LeafNode.h"
 
 #include "JSON.h"
@@ -185,10 +186,6 @@ void ResourceBehaviourTree::SetBehaviourTree(const char * data)
 	nodes.clear();
 	transitions.clear();
 
-	/*unsigned clipsSize = 0u;
-	memcpy(&clipsSize, data, sizeof(unsigned));
-	data += sizeof(int);*/
-
 	//import nodes
 	unsigned nodesSize = 0u;
 	memcpy(&nodesSize, data, sizeof(unsigned));
@@ -227,6 +224,8 @@ void ResourceBehaviourTree::SetBehaviourTree(const char * data)
 
 		CreateTransition(newOrigin, newDestiny);
 	}
+
+	BuildTree();
 }
 
 void ResourceBehaviourTree::Save()
@@ -254,7 +253,8 @@ void ResourceBehaviourTree::SaveBehaviourTreeData(char * data)
 		memcpy(cursor, node.name.C_str(), sizeof(char) * MAX_BONE_NAME_LENGTH);
 		cursor += sizeof(char) * MAX_BONE_NAME_LENGTH;
 
-		memcpy(cursor, &node.type, sizeof(unsigned));
+		unsigned nType = (unsigned)node.type;
+		memcpy(cursor, &nType, sizeof(unsigned));
 		cursor += sizeof(unsigned);
 	}
 
@@ -299,19 +299,21 @@ void ResourceBehaviourTree::CreateNode(HashString name, NodeType type)
 	switch (type)
 	{
 	case NodeType::Composite:
-		newNode = new CompositeNode();
+		newNode = new CompositeNode(name,type);
 		break;
 	case NodeType::Decorator:
-		newNode = new DecoratorNode();
+		newNode = new DecoratorNode(name, type);
 		break;
 	case NodeType::Leaf:
-		newNode = new LeafNode();
+		newNode = new LeafNode(name, type);
+		break;
+	case NodeType::Root:
+		newNode = new RootBehaviourNode();
 		break;
 	}
 
 	if (newNode != nullptr)
 	{
-		newNode->name = name;
 		nodes.push_back(*newNode);
 	}
 }
@@ -345,34 +347,21 @@ void ResourceBehaviourTree::RemoveTransition(unsigned UID)
 
 void ResourceBehaviourTree::RemoveNode(unsigned UID)
 {
-	//RemoveNodeTransitions(nodes[UID].nodeName);
-	//nodes.erase(nodes.begin() + UID);
-
-	//if (nodes.empty())
-	//{
-	//	defaultNode = 0u;
-	//}
-	//else
-	//{
-	//	if (defaultNode > nodes.size() - 1)
-	//	{
-	//		defaultNode = nodes.size() - 1;
-	//	}
-
-	//}
+	//removenodetransitions(nodes[UID].nodename);
+	nodes.erase(nodes.begin() + UID);
 }
 
 unsigned ResourceBehaviourTree::FindNode(const HashString name)
 {
 	unsigned i;
 
-	//for (i = 0u; i < nodes.size(); ++i)
-	//{
-	//	if (nodes[i].nodeName == name)
-	//	{
-	//		break;
-	//	}
-	//}
+	for (i = 0u; i < nodes.size(); ++i)
+	{
+		if (nodes[i].name == name)
+		{
+			break;
+		}
+	}
 	return i;
 }
 
@@ -400,6 +389,16 @@ unsigned ResourceBehaviourTree::GetNodeType(unsigned index)
 	return (unsigned)nodes[index].type;
 }
 
+HashString ResourceBehaviourTree::GetTransitionOrigin(unsigned index)
+{
+	return transitions[index].originName;
+}
+
+HashString ResourceBehaviourTree::GetTransitionDestiny(unsigned index)
+{
+	return transitions[index].destinyName;
+}
+
 unsigned ResourceBehaviourTree::GetNodesSize()
 {
 	return nodes.size();
@@ -408,4 +407,60 @@ unsigned ResourceBehaviourTree::GetNodesSize()
 unsigned ResourceBehaviourTree::GetTransitionsSize()
 {
 	return transitions.size();
+}
+
+void ResourceBehaviourTree::BuildTree()
+{
+	CleanTree();
+
+	for (auto node : nodes)
+	{
+		if (node.type == NodeType::Root)
+		{ 
+			rootNode = (RootBehaviourNode*)&node;
+			break;
+		}
+	}
+
+	for (auto node : nodes)
+	{
+		if (node.type != NodeType::Leaf)
+		{
+			for (auto& transition : transitions)
+			{
+				if (transition.originName == node.name)
+				{
+					for (auto& nodeBis : nodes)
+					{
+						if (nodeBis.name == transition.destinyName)
+						{
+							switch (node.type)
+							{
+							case NodeType::Composite:
+								((CompositeNode*)&node)->nodeChildren.push_back(&nodeBis);
+								break;
+							case NodeType::Decorator:
+								((DecoratorNode*)&node)->child = &nodeBis;
+								break;
+							case NodeType::Root:
+								((RootBehaviourNode*)&node)->rootChildren.push_back(&nodeBis);
+								break;
+							}
+							break;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+	//Now looping through transitions we should build the tree
+
+}
+
+void ResourceBehaviourTree::CleanTree()
+{
+	if(rootNode != nullptr)
+		rootNode->CleanNode();
 }

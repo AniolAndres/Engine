@@ -291,6 +291,7 @@
     <ClInclude Include="ResourceSortingFunctions.h" />
     <ClInclude Include="ResourceTexture.h" />
     <ClInclude Include="ResourceStateMachine.h" />
+    <ClInclude Include="RootBehaviourNode.h" />
     <ClInclude Include="Soloud\fractal_includes\dr_flac.h" />
     <ClInclude Include="Soloud\fractal_includes\dr_mp3.h" />
     <ClInclude Include="Soloud\fractal_includes\dr_wav.h" />
@@ -425,6 +426,7 @@
     <ClCompile Include="ResourceScene.cpp" />
     <ClCompile Include="ResourceSkybox.cpp" />
     <ClCompile Include="ResourceTexture.cpp" />
+    <ClCompile Include="RootBehaviourNode.cpp" />
     <ClCompile Include="Soloud\fractal_includes\dr_impl.cpp" />
     <ClCompile Include="Soloud\fractal_includes\soloud.cpp" />
     <ClCompile Include="Soloud\fractal_includes\soloud_audiosource.cpp" />

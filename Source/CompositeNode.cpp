@@ -19,3 +19,13 @@ CompositeNode::~CompositeNode()
 void CompositeNode::TickNode()
 {
 }
+
+void CompositeNode::CleanNode()
+{
+	for (auto child : nodeChildren)
+	{
+		child->CleanNode();
+	}
+
+	nodeChildren.clear();
+}

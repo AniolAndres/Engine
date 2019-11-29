@@ -12,6 +12,7 @@ public:
 
 	HashString originName;
 	HashString destinyName;
+
 };
 
 #endif 

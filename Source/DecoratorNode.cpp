@@ -18,3 +18,8 @@ DecoratorNode::~DecoratorNode()
 void DecoratorNode::TickNode()
 {
 }
+
+void DecoratorNode::CleanNode()
+{
+	child = nullptr;
+}

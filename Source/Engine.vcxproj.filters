@@ -352,6 +352,9 @@
     <ClCompile Include="BehaviourTransition.cpp">
       <Filter>Behaviour</Filter>
     </ClCompile>
+    <ClCompile Include="RootBehaviourNode.cpp">
+      <Filter>Behaviour</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Application.h" />
@@ -767,6 +770,9 @@
       <Filter>Behaviour</Filter>
     </ClInclude>
     <ClInclude Include="BehaviourTransition.h">
+      <Filter>Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="RootBehaviourNode.h">
       <Filter>Behaviour</Filter>
     </ClInclude>
   </ItemGroup>
