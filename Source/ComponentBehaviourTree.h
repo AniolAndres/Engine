@@ -31,6 +31,8 @@ public:
 	void CreateNewBehaviourTree();
 	void SetBehaviourTree(const char* btreeFile);
 
+	void Update() override;
+
 
 	ResourceBehaviourTree* bTree = nullptr;
 	EditorContext* GetEditorBTContext();

@@ -5,6 +5,8 @@
 
 #include "HashString.h"
 
+class Script;
+
 class LeafNode : public BehaviourNode
 {
 public:
@@ -12,7 +14,10 @@ public:
 	LeafNode(HashString name, NodeType type);
 	~LeafNode();
 
-	void TickNode() override;
+	TickStatus TickNode() override;
+
+	//SCript whatever;
+	Script* task = nullptr;
 };
 
 #endif	

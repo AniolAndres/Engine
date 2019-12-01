@@ -1,7 +1,8 @@
 #include "BehaviourNode.h"
 
-#include "HashString.h"
+#include "ResourceBehaviourTree.h"
 
+#include "HashString.h"
 #include <string>
 
 BehaviourNode::BehaviourNode()
@@ -14,4 +15,9 @@ BehaviourNode::BehaviourNode(HashString name, NodeType type) : name(name) , type
 
 BehaviourNode::~BehaviourNode()
 {
+}
+
+TickStatus BehaviourNode::TickNode()
+{
+	return TickStatus::RUNNING;
 }

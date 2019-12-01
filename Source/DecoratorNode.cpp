@@ -15,8 +15,18 @@ DecoratorNode::~DecoratorNode()
 {
 }
 
-void DecoratorNode::TickNode()
+TickStatus DecoratorNode::TickNode()
 {
+	//This will be an inverter for now
+
+	if (child->TickNode() == TickStatus::FAILURE)
+	{
+		return TickStatus::SUCCESS;
+	}
+	else if (child->TickNode() == TickStatus::SUCCESS)
+	{
+		return TickStatus::FAILURE;
+	}
 }
 
 void DecoratorNode::CleanNode()

@@ -3,6 +3,8 @@
 #include "ResourceBehaviourTree.h"
 
 #include "HashString.h"
+#include "BaseScript.h"
+#include "../Scripts/BehaviourTask/BehaviourTask.h"
 
 LeafNode::LeafNode()
 {
@@ -17,6 +19,8 @@ LeafNode::~LeafNode()
 {
 }
 
-void LeafNode::TickNode()
+TickStatus LeafNode::TickNode()
 {
+	task->BehaviourTick();
+	return TickStatus::RUNNING;
 }

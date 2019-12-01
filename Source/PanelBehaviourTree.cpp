@@ -40,6 +40,7 @@ void PanelBehaviourTree::DrawBT(ResourceBehaviourTree * btree, ax::NodeEditor::E
 
 	ed::Suspend();
 	ShowNodeMenu(btree);
+	ShowTransitionMenu(btree);
 	ShowCreateNewNode(btree);
 	ed::Resume();
 
@@ -80,7 +81,15 @@ void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
 		switch ((NodeType)btree->GetNodeType(i))
 		{
 		case NodeType::Composite:
-			ImGui::Text("Composite Node");
+			switch ((CompositeType)btree->GetCompositeType(i))
+			{
+			case CompositeType::Selector:
+				ImGui::Text("Comp: Selector");
+				break;
+			case CompositeType::Sequence:
+				ImGui::Text("Comp: Sequence");
+				break;
+			}
 			break;
 		case NodeType::Decorator:
 			ImGui::Text("Decorator Node");
@@ -92,6 +101,8 @@ void PanelBehaviourTree::DrawNodes(ResourceBehaviourTree * btree)
 			ImGui::Text("Root Node");
 			break;
 		}
+
+		ImGui::Text("Priority: %i", btree->GetNodePriority(i));
 
 		drawList->AddLine(
 			ImGui::GetCursorScreenPos(),
@@ -131,18 +142,68 @@ void PanelBehaviourTree::ShowNodeMenu(ResourceBehaviourTree * btree)
 {
 	if (ImGui::BeginPopup("Node Context BT Menu"))
 	{
-		ImGui::TextUnformatted("Transition Context Menu");
+		ImGui::TextUnformatted("Node Context Menu");
 		ImGui::Separator();
 
 		//Node Name
-		//char* nodeName = new char[MAX_BT_NAME];
-		//strcpy(nodeName, btree->GetNodeName(contextNode).C_str());
-		//ImGui::InputText("Node name", nodeName, MAX_BT_NAME);
-		////WARNING, if the node name changes the transitions containing it must also change!
+		char* nodeName = new char[MAX_BT_NAME];
+		strcpy(nodeName, btree->GetNodeName(contextNode).C_str());
+		if (ImGui::InputText("Node name", nodeName, MAX_BT_NAME))
+		{
+			btree->SetNodeName(contextNode, HashString(nodeName));
+			btree->Save();
+		}
+		//WARNING, if the node name changes the transitions containing it must also change!
 
-		//btree->SetNodeName(contextNode, HashString(nodeName));
+		//We will manage the order of children with the int priority
+		int nodePriority = btree->GetNodePriority(contextNode);
+		if (ImGui::InputInt("Priority", &nodePriority))
+		{
+			btree->SetNodePriority(contextNode, nodePriority);
+			btree->Save();
+		}
 
-		//We need a checkbox to determine the defaultNode
+		switch ((NodeType)btree->GetNodeType(contextNode))
+		{
+			case NodeType::Composite:
+			{
+				HashString cTypeName;
+
+				CompositeType nodeCType = btree->GetCompositeType(contextNode);
+				switch (nodeCType)
+				{
+				case CompositeType::Selector:
+					cTypeName = HashString("Selector");
+					break;
+				case CompositeType::Sequence:
+					cTypeName = HashString("Sequence");
+					break;
+				}
+
+				if (ImGui::BeginCombo("Comp type", cTypeName.C_str()))
+				{
+					bool isSelected = btree->GetCompositeType(contextNode) == CompositeType::Sequence;
+					if (ImGui::Selectable("Sequence", isSelected))
+					{
+						btree->SetCompositeType(contextNode, CompositeType::Sequence);
+					}
+					isSelected = btree->GetCompositeType(contextNode) == CompositeType::Selector;
+					if (ImGui::Selectable("Selector", isSelected))
+					{
+						btree->SetCompositeType(contextNode, CompositeType::Selector);
+					}
+
+					ImGui::EndCombo();
+				}
+			}
+				break;
+			case NodeType::Decorator:
+
+				break;
+			case NodeType::Leaf:
+			//A selectable for the script to use yay
+				break;
+		}
 
 		//if (ImGui::BeginCombo("Clip", stateMachine->GetNodeClip(contextNode).C_str()))
 		//{
@@ -170,6 +231,29 @@ void PanelBehaviourTree::ShowNodeMenu(ResourceBehaviourTree * btree)
 			btree->RemoveNode(contextNode);
 			btree->Save();
 		}
+		ImGui::EndPopup();
+	}
+}
+
+void PanelBehaviourTree::ShowTransitionMenu(ResourceBehaviourTree * btree)
+{
+	if (ImGui::BeginPopup("Link Context BT Menu"))
+	{
+		ImGui::TextUnformatted("Link Context Menu");
+		ImGui::Separator();
+
+		//Origin
+		char* oName = new char[MAX_BT_NAME];
+		strcpy(oName, btree->GetTransitionOrigin(contextLink).C_str());
+		ImGui::InputText("Origin", oName, MAX_BT_NAME);
+		btree->SetTransitionOrigin(HashString(oName), contextLink);
+
+		//Destiny
+		char* dName = new char[MAX_BT_NAME];
+		strcpy(dName, btree->GetTransitionDestiny(contextLink).C_str());
+		ImGui::InputText("Destiny", dName, MAX_BT_NAME);
+		btree->SetTransitionDestiny(HashString(dName), contextLink);
+
 		ImGui::EndPopup();
 	}
 }
@@ -238,28 +322,28 @@ void PanelBehaviourTree::ShowCreateNewNode(ResourceBehaviourTree * btree)
 			{
 				unsigned nodeIndex = btree->GetNodesSize();
 				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
-				btree->CreateNode(HashString("New Composite Node"), NodeType::Composite);
+				btree->CreateNode(HashString("New Composite Node"), NodeType::Composite, 0);
 				btree->Save();
 			}
 			if (ImGui::MenuItem("Decorator"))
 			{
 				unsigned nodeIndex = btree->GetNodesSize();
 				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
-				btree->CreateNode(HashString("New Decorator Node"), NodeType::Decorator);
+				btree->CreateNode(HashString("New Decorator Node"), NodeType::Decorator, 0);
 				btree->Save();
 			}
 			if (ImGui::MenuItem("Leaf"))
 			{
 				unsigned nodeIndex = btree->GetNodesSize();
 				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
-				btree->CreateNode(HashString("New Leaf Node"), NodeType::Leaf);
+				btree->CreateNode(HashString("New Leaf Node"), NodeType::Leaf, 0);
 				btree->Save();
 			}
 			if (ImGui::MenuItem("Root"))
 			{
 				unsigned nodeIndex = btree->GetNodesSize();
 				ed::SetNodePosition(nodeIndex * 3 + 1, ed::ScreenToCanvas(newNodePosition));
-				btree->CreateNode(HashString("New Root Node"), NodeType::Root);
+				btree->CreateNode(HashString("New Root Node"), NodeType::Root, 0);
 				btree->Save();
 			}
 

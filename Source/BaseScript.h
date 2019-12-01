@@ -44,6 +44,7 @@ public:
 	virtual void OnTriggerExit(GameObject* go) {}
 	virtual void OnButtonDown() {}
 	virtual void OnButtonUp() {}
+	virtual void BehaviourTick() {}
 
 public:
 	std::string name = "Script";

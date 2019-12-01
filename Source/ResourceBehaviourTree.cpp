@@ -22,7 +22,7 @@ ResourceBehaviourTree::ResourceBehaviourTree(const ResourceBehaviourTree & resou
 	name = resource.name;
 	for (const auto& node : resource.nodes)
 	{
-		nodes.emplace_back(node.name, node.type);
+		CreateNode(node->name, node->type, 0);
 	}
 
 	for (const auto& transition : resource.transitions)
@@ -201,8 +201,17 @@ void ResourceBehaviourTree::SetBehaviourTree(const char * data)
 		unsigned nodeType = 0u;
 		memcpy(&nodeType, data, sizeof(unsigned));
 		data += sizeof(unsigned);
+		
+		unsigned compositeType = 0u;
+		memcpy(&compositeType, data, sizeof(unsigned));
+		data += sizeof(unsigned);
 
-		CreateNode(newNodeName, (NodeType)nodeType);
+		unsigned priority = 0;
+		memcpy(&priority, data, sizeof(int));
+		data += sizeof(int);
+
+		BehaviourNode* newNode = CreateNode(newNodeName, (NodeType)nodeType, priority);
+		newNode->cType = (CompositeType)compositeType;
 	}
 
 	//import transitions
@@ -250,12 +259,19 @@ void ResourceBehaviourTree::SaveBehaviourTreeData(char * data)
 
 	for (const auto& node : nodes)
 	{
-		memcpy(cursor, node.name.C_str(), sizeof(char) * MAX_BONE_NAME_LENGTH);
+		memcpy(cursor, node->name.C_str(), sizeof(char) * MAX_BONE_NAME_LENGTH);
 		cursor += sizeof(char) * MAX_BONE_NAME_LENGTH;
 
-		unsigned nType = (unsigned)node.type;
+		unsigned nType = (unsigned)node->type;
 		memcpy(cursor, &nType, sizeof(unsigned));
 		cursor += sizeof(unsigned);
+
+		unsigned cType = (unsigned)node->cType;
+		memcpy(cursor, &cType, sizeof(unsigned));
+		cursor += sizeof(unsigned);
+
+		memcpy(cursor, &node->priority, sizeof(int));
+		cursor += sizeof(int);
 	}
 
 	unsigned transitionSize = transitions.size();
@@ -281,7 +297,8 @@ unsigned ResourceBehaviourTree::GetBTSize()
 	for (const auto& node : nodes)
 	{
 		size += sizeof(char) * MAX_BONE_NAME_LENGTH;
-		size += sizeof(unsigned);
+		size += sizeof(unsigned) * 2;
+		size += sizeof(int);
 	}
 
 	for (const auto& transition : transitions)
@@ -292,7 +309,12 @@ unsigned ResourceBehaviourTree::GetBTSize()
 	return size;
 }
 
-void ResourceBehaviourTree::CreateNode(HashString name, NodeType type)
+void ResourceBehaviourTree::Tick()
+{
+	rootNode->TickNode();
+}
+
+BehaviourNode* ResourceBehaviourTree::CreateNode(HashString name, NodeType type, int priority)
 {
 	BehaviourNode* newNode = nullptr;
 
@@ -314,8 +336,11 @@ void ResourceBehaviourTree::CreateNode(HashString name, NodeType type)
 
 	if (newNode != nullptr)
 	{
-		nodes.push_back(*newNode);
+		newNode->priority = priority;
+		nodes.push_back(newNode);
 	}
+
+	return newNode;
 }
 
 void ResourceBehaviourTree::CreateTransition(HashString origin, HashString destiny)
@@ -325,29 +350,29 @@ void ResourceBehaviourTree::CreateTransition(HashString origin, HashString desti
 
 void ResourceBehaviourTree::RemoveNodeTransitions(HashString nodeName)
 {
-	//std::vector<Transition>::iterator it = transitions.begin();
+	std::vector<BehaviourTransition>::iterator it = transitions.begin();
 
-	//while (it != transitions.end())
-	//{
-	//	if (it->origin == nodeName || it->destiny == nodeName)
-	//	{
-	//		it = transitions.erase(it);
-	//	}
-	//	else
-	//	{
-	//		++it;
-	//	}
-	//}
+	while (it != transitions.end())
+	{
+		if (it->originName == nodeName || it->destinyName == nodeName)
+		{
+			it = transitions.erase(it);
+		}
+		else
+		{
+			++it;
+		}
+	}
 }
 
 void ResourceBehaviourTree::RemoveTransition(unsigned UID)
 {
-	/*transitions.erase(transitions.begin() + UID);*/
+	transitions.erase(transitions.begin() + UID);
 }
 
 void ResourceBehaviourTree::RemoveNode(unsigned UID)
 {
-	//removenodetransitions(nodes[UID].nodename);
+	RemoveNodeTransitions(nodes[UID]->name);
 	nodes.erase(nodes.begin() + UID);
 }
 
@@ -357,7 +382,7 @@ unsigned ResourceBehaviourTree::FindNode(const HashString name)
 
 	for (i = 0u; i < nodes.size(); ++i)
 	{
-		if (nodes[i].name == name)
+		if (nodes[i]->name == name)
 		{
 			break;
 		}
@@ -369,24 +394,71 @@ unsigned ResourceBehaviourTree::FindTransition(const HashString origin, const Ha
 {
 	unsigned i;
 
-	//for (i = 0u; i < transitions.size(); ++i)
-	//{
-	//	if (transitions[i].origin == origin && transitions[i].destiny == destiny)
-	//	{
-	//		break;
-	//	}
-	//}
+	for (i = 0u; i < transitions.size(); ++i)
+	{
+		if (transitions[i].originName == origin && transitions[i].destinyName == destiny)
+		{
+			break;
+		}
+	}
 	return i;
 }
 
 HashString ResourceBehaviourTree::GetNodeName(unsigned index)
 {
-	return nodes[index].name;
+	return nodes[index]->name;
 }
 
 unsigned ResourceBehaviourTree::GetNodeType(unsigned index)
 {
-	return (unsigned)nodes[index].type;
+	return (unsigned)nodes[index]->type;
+}
+
+void ResourceBehaviourTree::SetNodeName(unsigned index, HashString name)
+{
+	HashString previousName = nodes[index]->name;
+
+	nodes[index]->name = name;
+
+	for (auto transition : transitions)
+	{
+		if (transition.originName == previousName)
+		{
+			transition.originName = name;
+		}
+		else if (transition.destinyName == previousName)
+		{
+			transition.destinyName = name;
+		}
+	}
+}
+
+void ResourceBehaviourTree::SetNodePriority(unsigned index, int priority)
+{
+	nodes[index]->priority = priority;
+}
+
+int ResourceBehaviourTree::GetNodePriority(unsigned index)
+{
+	return nodes[index]->priority;
+}
+
+CompositeType ResourceBehaviourTree::GetCompositeType(unsigned index)
+{
+	if (nodes[index]->type == NodeType::Composite)
+	{
+		CompositeNode* thisNode = (CompositeNode*)nodes[index];
+		return thisNode->cType;
+	}
+}
+
+void ResourceBehaviourTree::SetCompositeType(unsigned index, CompositeType cType)
+{
+	if (nodes[index]->type == NodeType::Composite)
+	{
+		CompositeNode* thisNode = (CompositeNode*)nodes[index];
+		thisNode->cType = cType;
+	}
 }
 
 HashString ResourceBehaviourTree::GetTransitionOrigin(unsigned index)
@@ -397,6 +469,16 @@ HashString ResourceBehaviourTree::GetTransitionOrigin(unsigned index)
 HashString ResourceBehaviourTree::GetTransitionDestiny(unsigned index)
 {
 	return transitions[index].destinyName;
+}
+
+void ResourceBehaviourTree::SetTransitionOrigin(HashString name, unsigned index)
+{
+	transitions[index].originName = name;
+}
+
+void ResourceBehaviourTree::SetTransitionDestiny(HashString name, unsigned index)
+{
+	transitions[index].destinyName = name;
 }
 
 unsigned ResourceBehaviourTree::GetNodesSize()
@@ -413,37 +495,37 @@ void ResourceBehaviourTree::BuildTree()
 {
 	CleanTree();
 
-	for (auto node : nodes)
+	for (auto& node : nodes)
 	{
-		if (node.type == NodeType::Root)
+		if (node->type == NodeType::Root)
 		{ 
-			rootNode = (RootBehaviourNode*)&node;
+			rootNode = (RootBehaviourNode*)node;
 			break;
 		}
 	}
 
-	for (auto node : nodes)
+	for (auto& node : nodes)
 	{
-		if (node.type != NodeType::Leaf)
+		if (node->type != NodeType::Leaf)
 		{
 			for (auto& transition : transitions)
 			{
-				if (transition.originName == node.name)
+				if (transition.originName == node->name)
 				{
 					for (auto& nodeBis : nodes)
 					{
-						if (nodeBis.name == transition.destinyName)
+						if (nodeBis->name == transition.destinyName)
 						{
-							switch (node.type)
+							switch (node->type)
 							{
 							case NodeType::Composite:
-								((CompositeNode*)&node)->nodeChildren.push_back(&nodeBis);
+								((CompositeNode*)node)->nodeChildren.push_back(nodeBis);
 								break;
 							case NodeType::Decorator:
-								((DecoratorNode*)&node)->child = &nodeBis;
+								((DecoratorNode*)node)->child = nodeBis;
 								break;
 							case NodeType::Root:
-								((RootBehaviourNode*)&node)->rootChildren.push_back(&nodeBis);
+								((RootBehaviourNode*)node)->rootChildren.push_back(nodeBis);
 								break;
 							}
 							break;
@@ -454,13 +536,21 @@ void ResourceBehaviourTree::BuildTree()
 		}
 	}
 
-
-	//Now looping through transitions we should build the tree
-
+	PriorizeNodes();
 }
 
 void ResourceBehaviourTree::CleanTree()
 {
-	if(rootNode != nullptr)
+	if (rootNode != nullptr)
+	{
 		rootNode->CleanNode();
+	}
+}
+
+void ResourceBehaviourTree::PriorizeNodes()
+{
+	if (rootNode != nullptr)
+	{
+		rootNode->OrderChildren();
+	}
 }

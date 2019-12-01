@@ -13,7 +13,7 @@ public:
 	DecoratorNode(HashString name, NodeType type);
 	~DecoratorNode();
 	
-	void TickNode() override;
+	TickStatus TickNode() override;
 	void CleanNode() override;
 
 	BehaviourNode* child = nullptr;

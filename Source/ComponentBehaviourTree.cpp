@@ -2,6 +2,7 @@
 
 #include "Application.h"
 #include "ModuleResourceManager.h"
+#include "ModuleTime.h"
 #include "GameObject.h"
 
 #include "Resource.h"
@@ -132,6 +133,14 @@ void ComponentBehaviourTree::SetBehaviourTree(const char* btreeFile)
 	{
 		bTree = (ResourceBehaviourTree*)App->resManager->GetByName(btreeFile, TYPE::BEHAVIOURTREE);
 		strcpy(newBTname, bTree->GetName());
+	}
+}
+
+void ComponentBehaviourTree::Update()
+{
+	if (bTree != nullptr && App->time->gameState == GameState::RUN)
+	{
+		bTree->Tick();
 	}
 }
 

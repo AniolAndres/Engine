@@ -2,6 +2,8 @@
 
 #include "ResourceBehaviourTree.h"
 
+#include <algorithm>
+
 RootBehaviourNode::RootBehaviourNode()
 {
 	isRoot = true;
@@ -14,8 +16,17 @@ RootBehaviourNode::~RootBehaviourNode()
 {
 }
 
-void RootBehaviourNode::TickNode()
+TickStatus RootBehaviourNode::TickNode()
 {
+	for (auto child : rootChildren)
+	{
+		if(child->TickNode() == TickStatus::FAILURE)
+		{
+			return TickStatus::FAILURE;
+		}
+	}
+
+	return TickStatus::RUNNING;
 }
 
 void RootBehaviourNode::CleanNode()
@@ -26,4 +37,14 @@ void RootBehaviourNode::CleanNode()
 	}
 
 	rootChildren.clear();
+}
+
+void RootBehaviourNode::OrderChildren()
+{
+	std::sort(rootChildren.begin(), rootChildren.end());
+
+	for (auto child : rootChildren)
+	{
+		child->OrderChildren();
+	}
 }

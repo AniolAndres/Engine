@@ -11,6 +11,7 @@ namespace ed = ax::NodeEditor;
 class ResourceBehaviourTree;
 class BehaviourTreeScript;
 enum class NodeType;
+enum class CompositeType;
 
 class PanelBehaviourTree : public Panel
 {
@@ -21,6 +22,7 @@ public:
 	void DrawBT(ResourceBehaviourTree* btree, ax::NodeEditor::EditorContext* context);
 	void DrawNodes(ResourceBehaviourTree* btree);
 	void ShowNodeMenu(ResourceBehaviourTree* btree);
+	void ShowTransitionMenu(ResourceBehaviourTree* btree);
 	void DrawTransitions(ResourceBehaviourTree* btree);
 	void ShowContextMenus(ResourceBehaviourTree* btree);
 	void ShowCreateNewNode(ResourceBehaviourTree* btree);

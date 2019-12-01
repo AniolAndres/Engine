@@ -4,6 +4,8 @@
 #include "HashString.h"
 
 enum class NodeType;
+enum class CompositeType;
+enum class TickStatus;
 
 class BehaviourNode
 {
@@ -13,13 +15,21 @@ public:
 	virtual ~BehaviourNode();
 
 public:
-	virtual void TickNode() {}
+	virtual TickStatus TickNode();
 	virtual void CleanNode() {}
+	virtual void OrderChildren() {}
+
+	bool operator < (const BehaviourNode* node) const
+	{
+		return (this->priority < node->priority);
+	}
 
 public:
 	HashString name;
 	NodeType type;
+	CompositeType cType;
 	bool isRoot = false;
+	int priority = 0;
 };
 
 #endif //

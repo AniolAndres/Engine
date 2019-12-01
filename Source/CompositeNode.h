@@ -6,6 +6,7 @@
 #include "HashString.h"
 #include <vector>
 
+
 class CompositeNode : public BehaviourNode
 {
 public:
@@ -13,8 +14,9 @@ public:
 	CompositeNode(HashString name, NodeType type);
 	~CompositeNode();
 
-	void TickNode() override;
+	TickStatus TickNode() override;
 	void CleanNode() override;
+	void OrderChildren() override;
 
 	std::vector<BehaviourNode*> nodeChildren;
 };

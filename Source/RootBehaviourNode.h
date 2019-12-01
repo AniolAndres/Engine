@@ -13,8 +13,9 @@ public:
 	RootBehaviourNode();
 	~RootBehaviourNode();
 
-	void TickNode() override;
+	TickStatus TickNode() override;
 	void CleanNode() override;
+	void OrderChildren() override;
 
 	std::vector<BehaviourNode*> rootChildren;
 };
