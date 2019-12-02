@@ -67,7 +67,7 @@ void CompositeNode::CleanNode()
 
 void CompositeNode::OrderChildren()
 {
-	std::sort(nodeChildren.begin(), nodeChildren.end());
+	std::sort(nodeChildren.begin(), nodeChildren.end(), ComparePointers());
 
 	for (auto child : nodeChildren)
 	{

@@ -19,6 +19,7 @@ public:
 	void OrderChildren() override;
 
 	std::vector<BehaviourNode*> nodeChildren;
+
 };
 
 #endif //

@@ -148,11 +148,9 @@ void PanelBehaviourTree::ShowNodeMenu(ResourceBehaviourTree * btree)
 		//Node Name
 		char* nodeName = new char[MAX_BT_NAME];
 		strcpy(nodeName, btree->GetNodeName(contextNode).C_str());
-		if (ImGui::InputText("Node name", nodeName, MAX_BT_NAME))
-		{
-			btree->SetNodeName(contextNode, HashString(nodeName));
-			btree->Save();
-		}
+		ImGui::InputText("Node name", nodeName, MAX_BT_NAME);
+		btree->SetNodeName(contextNode, HashString(nodeName));
+
 		//WARNING, if the node name changes the transitions containing it must also change!
 
 		//We will manage the order of children with the int priority

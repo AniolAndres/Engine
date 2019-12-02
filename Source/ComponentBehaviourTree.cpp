@@ -102,6 +102,11 @@ void ComponentBehaviourTree::DrawProperties()
 			guiBTrees.clear();
 		}
 		ImGui::PopID();
+
+		if(ImGui::Button("Save BT"))
+		{
+			bTree->Save();
+		}
 	}
 	ImGui::PopID();
 }

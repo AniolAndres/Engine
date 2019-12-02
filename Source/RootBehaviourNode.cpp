@@ -41,10 +41,11 @@ void RootBehaviourNode::CleanNode()
 
 void RootBehaviourNode::OrderChildren()
 {
-	std::sort(rootChildren.begin(), rootChildren.end());
+	std::sort(rootChildren.begin(), rootChildren.end(), ComparePointers());
 
-	for (auto child : rootChildren)
+	for (unsigned i = 0u; i < rootChildren.size(); ++i)
 	{
-		child->OrderChildren();
+		LOG("Priority is %i, node Name %s", rootChildren[i]->priority, rootChildren[i]->name.C_str());
+		rootChildren[i]->OrderChildren();
 	}
 }

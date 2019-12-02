@@ -9,6 +9,20 @@ enum class TickStatus;
 
 class BehaviourNode
 {
+protected:
+	struct ComparePointers
+	{
+		bool operator()(const BehaviourNode* l, const BehaviourNode* r) 
+		{
+			return *l < *r;
+		}
+	};
+
+	bool operator < (const BehaviourNode &node) const
+	{
+		return (this->priority < node.priority);
+	}
+
 public:
 	BehaviourNode();
 	BehaviourNode(HashString name, NodeType type);
@@ -19,10 +33,7 @@ public:
 	virtual void CleanNode() {}
 	virtual void OrderChildren() {}
 
-	bool operator < (const BehaviourNode* node) const
-	{
-		return (this->priority < node->priority);
-	}
+
 
 public:
 	HashString name;

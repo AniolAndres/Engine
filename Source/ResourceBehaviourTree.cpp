@@ -420,13 +420,14 @@ void ResourceBehaviourTree::SetNodeName(unsigned index, HashString name)
 
 	nodes[index]->name = name;
 
-	for (auto transition : transitions)
+	for (auto& transition : transitions)
 	{
 		if (transition.originName == previousName)
 		{
 			transition.originName = name;
 		}
-		else if (transition.destinyName == previousName)
+
+		if (transition.destinyName == previousName)
 		{
 			transition.destinyName = name;
 		}
